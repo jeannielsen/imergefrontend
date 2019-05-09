@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/imergefrontend/static/css/main.6c291260.chunk.css",
+    "main.js": "/imergefrontend/static/js/main.53a4a950.chunk.js",
+    "main.js.map": "/imergefrontend/static/js/main.53a4a950.chunk.js.map",
+    "runtime~main.js": "/imergefrontend/static/js/runtime~main.32ae2932.js",
+    "runtime~main.js.map": "/imergefrontend/static/js/runtime~main.32ae2932.js.map",
+    "static/js/2.b71e12f8.chunk.js": "/imergefrontend/static/js/2.b71e12f8.chunk.js",
+    "static/js/2.b71e12f8.chunk.js.map": "/imergefrontend/static/js/2.b71e12f8.chunk.js.map",
+    "index.html": "/imergefrontend/index.html",
+    "precache-manifest.7916bbe4621aef5c932dc866e24f6b27.js": "/imergefrontend/precache-manifest.7916bbe4621aef5c932dc866e24f6b27.js",
+    "service-worker.js": "/imergefrontend/service-worker.js",
+    "static/css/main.6c291260.chunk.css.map": "/imergefrontend/static/css/main.6c291260.chunk.css.map",
+    "static/media/Restaurant.jpg": "/imergefrontend/static/media/Restaurant.e61807dc.jpg",
+    "static/media/airport-icon.png": "/imergefrontend/static/media/airport-icon.502d17b0.png",
+    "static/media/bank-icon.png": "/imergefrontend/static/media/bank-icon.1f3a13a3.png",
+    "static/media/bus-stop-icon.png": "/imergefrontend/static/media/bus-stop-icon.20092106.png",
+    "static/media/church-icon.jpg": "/imergefrontend/static/media/church-icon.1b05164a.jpg",
+    "static/media/embassy-icon.png": "/imergefrontend/static/media/embassy-icon.1761904e.png",
+    "static/media/flag-2.jpg": "/imergefrontend/static/media/flag-2.1104ea24.jpg",
+    "static/media/grocery-icon.png": "/imergefrontend/static/media/grocery-icon.193ff50a.png",
+    "static/media/hospital-icon.png": "/imergefrontend/static/media/hospital-icon.72e3e78e.png",
+    "static/media/immigration-icon.png": "/imergefrontend/static/media/immigration-icon.b3bb92e4.png",
+    "static/media/kids-2.png": "/imergefrontend/static/media/kids-2.b03668b9.png",
+    "static/media/mosque-icon.png": "/imergefrontend/static/media/mosque-icon.36d74317.png",
+    "static/media/movie-2-icon.jpg": "/imergefrontend/static/media/movie-2-icon.d0c1ccd4.jpg",
+    "static/media/park-icon.png": "/imergefrontend/static/media/park-icon.0d2ed851.png",
+    "static/media/school-icon.jpg": "/imergefrontend/static/media/school-icon.727437e7.jpg",
+    "static/media/temple-2-icon.jpg": "/imergefrontend/static/media/temple-2-icon.49732e7b.jpg"
+  }
+}
