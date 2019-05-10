@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 import i18n from "../../i18n";
 import "./style.css";
 
@@ -43,5 +44,5 @@ const Navbar = () => {
  
 };
 
-
-export default Navbar;
+export default withTranslation()(Navbar);
+// export default Navbar;

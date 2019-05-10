@@ -66,7 +66,17 @@ const resources = {
       "Thai": "Tailandés",
       "Turkish": "turco",
       "Vegetarian": "Vegetariano",
-      "Vietnamese": "Vietnamita"
+      "Vietnamese": "Vietnamita",
+      "US Citizenship and Immigration Services":"Servicios de Inmigración y Ciudadanía de los Estados Unidos",
+      "International Rescue Committee":"Comité Internacional de Rescate",
+      "Center for MultiCulture Health":"Centro de Salud MultiCultura",
+      "Immigration Resources Portal":"Portal de Recursos de Inmigración",
+      "International Families Justice Coalition":"Coalición Internacional de Justicia de las Familias",
+      "Leadership without Borders":"Liderazgo sin Fronteras",
+      "One America":"Una América",
+      "Migration Policy Institute":"Instituto de Política Migratoria",
+      "Northwest Immigrant Rights Project":"Proyecto de derechos de inmigrantes del noroeste",
+      "Neighborhood House":"Casa de barrio"
     }
   },
   fr: {
@@ -131,7 +141,17 @@ const resources = {
       "Thai": "Thaïlandais",
       "Turkish": "Turc",
       "Vegetarian": "Végétarien",
-      "Vietnamese": "Vietnamien"
+      "Vietnamese": "Vietnamien",
+      "US Citizenship and Immigration Services":"Services Américains de la Citoyenneté et de l'Immigration",
+      "International Rescue Committee":"Comité International de Secours",
+      "Center for MultiCulture Health":"Centre de santé multiculture",
+      "Immigration Resources Portal":"Portail de ressources sur l'immigration",
+      "International Families Justice Coalition":"Coalition internationale pour la justice familiale",
+      "Leadership without Borders":"Leadership sans frontières",
+      "One America":"Une Amérique",
+      "Migration Policy Institute":"Institut de politique de migration",
+      "Northwest Immigrant Rights Project":"Projet relatif aux droits des immigrants du Nord-Ouest",
+      "Neighborhood House":"Maison de Quartier"
     }
   }
 };

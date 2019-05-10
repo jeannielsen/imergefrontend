@@ -27,7 +27,7 @@ class Agencies extends Component {
               key={card.id}
               id={card.id}
               image={card.image}
-              name={card.name}
+              name={this.t(card.name)}
               address={card.address}
               phone={card.phone}
               url={card.url}
