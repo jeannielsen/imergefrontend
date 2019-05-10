@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4edc4a35c351548674eea748ca50d50a",
+    "revision": "95807a4d5ba43f8710b20d910a138d52",
     "url": "/imergefrontend/index.html"
   },
   {
-    "revision": "9cccd148c2ded961646a",
+    "revision": "f1d0d950b3a7d3f1ee1d",
     "url": "/imergefrontend/static/css/main.6c291260.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/js/2.b71e12f8.chunk.js"
   },
   {
-    "revision": "9cccd148c2ded961646a",
-    "url": "/imergefrontend/static/js/main.53a4a950.chunk.js"
+    "revision": "f1d0d950b3a7d3f1ee1d",
+    "url": "/imergefrontend/static/js/main.d197b7a0.chunk.js"
   },
   {
     "revision": "8017c2b5250916e9603a",
