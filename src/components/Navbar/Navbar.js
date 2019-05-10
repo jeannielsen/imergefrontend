@@ -8,6 +8,7 @@ import "./style.css";
 
 const Navbar = () => {
 
+
     const setLanguage = (langCode) => {
         i18n.changeLanguage(langCode)
             .then(t => {
@@ -21,28 +22,23 @@ const Navbar = () => {
     return (
         <header>
             <h2>Imerge</h2>
-            <div className="row">
-                <nav>
-                    <ul>
-                        <li> <Link to="/">Home</Link></li>
-                        <li> <Link to="/Agencies">Agencies</Link></li>
-                        <li> <Link to="/Maps">Maps</Link></li>
-                        <li> <Link to="/News">News</Link></li>
-                        <li> <Link to="/Translator">Translator</Link></li>
-                    </ul>
-                </nav>
+            <nav>
                 <ul>
+                    <li> <Link to="/">Home</Link></li>
+                    <li> <Link to="/Agencies">Agencies</Link></li>
+                    <li> <Link to="/Maps">Maps</Link></li>
+                    <li> <Link to="/News">News</Link></li>
+                    <li> <Link to="/Translator">Translator</Link></li>
+
                     <li>
                         <button onClick={() => setLanguage("en")}>English</button>
                         <button onClick={() => setLanguage("es")}>Español</button>
                         <button onClick={() => setLanguage("fr")}>Français</button>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </header>
     );
- 
 };
 
 export default withTranslation()(Navbar);
-// export default Navbar;
