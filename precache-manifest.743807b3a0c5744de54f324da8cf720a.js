@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "533e1f1e2b8989f87776d5a0a992daf3",
+    "revision": "4edc4a35c351548674eea748ca50d50a",
     "url": "/imergefrontend/index.html"
   },
   {
