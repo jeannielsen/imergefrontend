@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/imergefrontend/precache-manifest.7de369d48cca8cb5842b9361cecdff51.js"
+  "/imergefrontend/precache-manifest.329dd8c5a0a2a72a6afb0a0cc7022d73.js"
 );
 
 self.addEventListener('message', (event) => {
