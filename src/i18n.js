@@ -76,7 +76,8 @@ const resources = {
       "One America":"Una América",
       "Migration Policy Institute":"Instituto de Política Migratoria",
       "Northwest Immigrant Rights Project":"Proyecto de derechos de inmigrantes del noroeste",
-      "Neighborhood House":"Casa de barrio"
+      "Neighborhood House":"Casa de barrio",
+      "Start typing in the left panel and the translator will detect your language":"Comience a escribir en el panel izquierdo y el traductor detectará su idioma."
     }
   },
   fr: {
@@ -151,7 +152,8 @@ const resources = {
       "One America":"Une Amérique",
       "Migration Policy Institute":"Institut de politique de migration",
       "Northwest Immigrant Rights Project":"Projet relatif aux droits des immigrants du Nord-Ouest",
-      "Neighborhood House":"Maison de Quartier"
+      "Neighborhood House":"Maison de Quartier",
+      "Start typing in the left panel and the translator will detect your language":"Commencez à taper dans le panneau de gauche et le traducteur détectera votre langue"
     }
   }
 };
