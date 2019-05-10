@@ -223,7 +223,7 @@ class SidePanel extends Component {
         <div className = "row" >
         <div className = "col-sm-6" >
         <a href = '#' onClick = {this.handleImmigrationOfficeClick}>
-          <CategoryOptionsPanel text = {t("Government office")} image ={this.state.GovtOfficeIcon}/>
+          <CategoryOptionsPanel text = {t("Government Offices")} image ={this.state.GovtOfficeIcon}/>
           </a>
           </div>
           <div className = "col-sm-6" >

@@ -5,6 +5,7 @@ import Article from "../../components/Article";
 import { List } from "../../components/List";
 import { Col, Row, Container } from "../../components/Grid";
 import { withTranslation } from 'react-i18next';
+import i18n from "../../i18n";
 
 
 
@@ -34,25 +35,61 @@ class News extends Component  {
 
   componentDidMount() {
     this.getNews();
+
+    i18n.on('languageChanged', () => {this.getNews();});
   }
 
   // getNews is an API call to query for news and returns the results
   getNews = () => {
+
+    const langCode = i18n.language;
+    console.log('News.getNews(): langCode = ', langCode);
+
     NewsAPI.getNews({
       q: 'immigration',
       sources: '',
       domains: '',
       from: '2019-04-20',
       to: '2019-05-13',
-      language: 'en',
+      language: langCode,
       sortBy: 'relevancy',
       page: 2
     })
       .then(res => {
-        this.setState({
-          news: res.articles
-        });
         console.log('this is headline news: ', res);
+        if(res && res !== null && res.articles 
+          && res.articles!== null && res.articles.length > 0
+        ) {
+          this.setState({
+            news: res.articles,
+            backUpLangUsed: false
+          });
+        } else {
+          // just try english
+          NewsAPI.getNews({
+            q: 'immigration',
+            sources: '',
+            domains: '',
+            from: '2019-04-20',
+            to: '2019-05-13',
+            language: "en",
+            sortBy: 'relevancy',
+            page: 2
+          })
+            .then(res => {
+              console.log('this is headline news2: ', res);
+              if(res && res !== null && res.articles 
+                && res.articles!== null && res.articles.length > 0
+              ) {
+                this.setState({
+                  news: res.articles,
+                  backUpLangUsed: true
+                });
+                console.log('this is headline news: ', res);
+              }
+            }
+            )
+        }
       }
       )
       // if no news are found it sets news to an empty array and sends message that no news were found

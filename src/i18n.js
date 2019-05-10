@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 // the translations
 
 const resources = {
-  en: {
+  es: {
     translation: {
       "Home Page": "Página de inicio",
       "Home": "Página de inicio",
@@ -67,6 +67,71 @@ const resources = {
       "Turkish": "turco",
       "Vegetarian": "Vegetariano",
       "Vietnamese": "Vietnamita"
+    }
+  },
+  fr: {
+    translation: {
+      "Home Page": "Page d'accueil",
+      "Home": "Page d'accueil",
+      "Agencies": "Agences",
+      "Maps": "Agences",
+      "Embassy":"Ambassade",
+      "News": "Nouvelles",
+      "Translator": "Traducteur",
+      "Website": "Site Internet",
+      "Restaurants": "Restaurants",
+      "Grocery Stores": "Épiceries",
+      "Immigration Offices": "Bureaux d'immigration",
+      "HealthCare": "Soins de santé",
+      "News Headlines": "Actualités",
+      "Results": "Résultats",
+      "Translator Page": "Page de traducteur",
+      "Welcome to Imerge": "Bienvenue à Imerge",
+      "Post Offices": "Bureau de poste",
+      "Banks": "Banques",
+      "Schools": "Écoles",
+      "Bus Stops": " Arrêts d'autobus",
+      "Airports": "Les aéroports",
+      "Movie Theaters": "Cinémas",
+      "Public Parks": "Parcs publics",
+      "Temples": "Temples",
+      "Churches": "Des églises",
+      "Mosques": "Mosquées",
+      "Agencies and Resources": "Agences et ressources",
+      "Go back": "Retourner",
+      "Government Offices": "Bureaux du gouvernement",
+      "Asian": "Asiatique",
+      "Barbecue": "Barbecue",
+      "Breakfast": "Petit déjeuner",
+      "Café": "Café",
+      "Chinese": "Chinois",
+      "European": "Européen",
+      "Fast Food": "Vite Aliments",
+      "Hamburger": "Hamburger",
+      "Ice Cream": "Crème glacée",
+      "Indian": "Indien",
+      "Indonesian": "Indonésien",
+      "Irish": "Irlandais",
+      "Italian": "Italien",
+      "Jamaican": "Jamaïquain",
+      "Japanese": "Japonais",
+      "Korean": "Coréen",
+      "Mediterranean": "Méditerranéen",
+      "Mexican": "Mexicain",
+      "Philippine": "Philippin",
+      "Portuguese": "Portugais",
+      "Sausage": "Saucisse",
+      "Seafood": "Fruit de mer",
+      "Soul Food": "Nourriture Soul",
+      "Spanish Cuisine": "Cuisine espagnole",
+      "Steak": "Steak",
+      "Street Food": "L'alimentation de rue",
+      "Sushi": "Sushi",
+      "Tapas": "Des tapas",
+      "Thai": "Thaïlandais",
+      "Turkish": "Turc",
+      "Vegetarian": "Végétarien",
+      "Vietnamese": "Vietnamien"
     }
   }
 };
