@@ -1,12 +1,12 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 import "./home.css";
-import BackgroundImage1 from './flag-2.jpg';
-import BackgroundImage2 from './kidsgroup.jpg';
-import BackgroundImage3 from './immigrants.png';
-import ThumnailImage1 from './multicolour.jpg';
-import ThumnailImage2 from './multiracial-hands.jpeg';
-import ThumnailImage3 from './unity-2.png';
+import BackgroundImage1 from 'flag-2.jpg';
+import BackgroundImage2 from 'kidsgroup.jpg';
+import BackgroundImage3 from 'immigrants.png';
+import ThumnailImage1 from 'multicolour.jpg';
+import ThumnailImage2 from 'multiracial-hands.jpeg';
+import ThumnailImage3 from 'unity-2.png';
 import ThumnailImage4 from './love-grow-serve.jpg';
 // import Carousel from 'react-bootstrap/Carousel';
 // import Container from 'react-bootstrap/Container';
