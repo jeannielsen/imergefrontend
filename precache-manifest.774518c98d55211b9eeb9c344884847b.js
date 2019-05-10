@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "495eee51df02c63731ff1bf0d09c10f3",
+    "revision": "7405e09167b8db5728a97ced6fa2984a",
     "url": "/imergefrontend/index.html"
   },
   {
-    "revision": "29defda8a95e4af905a5",
-    "url": "/imergefrontend/static/css/main.6c291260.chunk.css"
+    "revision": "eb6e9c602b4dc16a2db8",
+    "url": "/imergefrontend/static/css/main.b65f211d.chunk.css"
   },
   {
-    "revision": "a164d6dd67e51d87a615",
-    "url": "/imergefrontend/static/js/2.fdb722b3.chunk.js"
+    "revision": "d01fa6b78388509a731f",
+    "url": "/imergefrontend/static/js/2.1340ada9.chunk.js"
   },
   {
-    "revision": "29defda8a95e4af905a5",
-    "url": "/imergefrontend/static/js/main.5c32fc40.chunk.js"
+    "revision": "eb6e9c602b4dc16a2db8",
+    "url": "/imergefrontend/static/js/main.56b65f9b.chunk.js"
   },
   {
     "revision": "8017c2b5250916e9603a",
@@ -56,12 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/hospital-icon.72e3e78e.png"
   },
   {
+    "revision": "85bb231a47b1d0d8605587f68d6a9526",
+    "url": "/imergefrontend/static/media/immigrants.85bb231a.png"
+  },
+  {
     "revision": "b3bb92e47e49fdb15a31a21a61793e29",
     "url": "/imergefrontend/static/media/immigration-icon.b3bb92e4.png"
   },
   {
-    "revision": "b03668b93d17153bbbf3055f2a667c7e",
-    "url": "/imergefrontend/static/media/kids-2.b03668b9.png"
+    "revision": "63ae171ee048ac711c2da905195ad650",
+    "url": "/imergefrontend/static/media/kidsgroup.63ae171e.jpg"
+  },
+  {
+    "revision": "7351299963c721610f5692eb572053f9",
+    "url": "/imergefrontend/static/media/love-grow-serve.73512999.jpg"
   },
   {
     "revision": "36d7431729427232f6535f0f5beb0cd1",
@@ -70,6 +78,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d0c1ccd4b4359b3d04e8ee1fe93dc9fd",
     "url": "/imergefrontend/static/media/movie-2-icon.d0c1ccd4.jpg"
+  },
+  {
+    "revision": "8690110d5c38bc95053585a733884fa9",
+    "url": "/imergefrontend/static/media/multicolour.8690110d.jpg"
+  },
+  {
+    "revision": "2a585b13153f8a574a0b89ac1970c6df",
+    "url": "/imergefrontend/static/media/multiracial-hands.2a585b13.jpeg"
   },
   {
     "revision": "0d2ed85140d7da53ac089a22f916bfcf",
