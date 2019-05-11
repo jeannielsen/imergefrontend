@@ -25,7 +25,6 @@
     "typescript": "^3.4.5"
   },
   "proxy": "https://maps.googleapis.com",
-
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
