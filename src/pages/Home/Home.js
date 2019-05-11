@@ -4,15 +4,11 @@ import "./home.css";
 import BackgroundImage1 from './flag-2.jpg';
 import BackgroundImage2 from './kidsgroup.jpg';
 import BackgroundImage3 from './immigrants.png';
-import ThumnailImage1 from './multicolour.jpg';
-import ThumnailImage2 from './multiracial-hands.jpeg';
-import ThumnailImage3 from './unity-2.png';
-import ThumnailImage4 from './love-grow-serve.jpg';
-// import Carousel from 'react-bootstrap/Carousel';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import Image from 'react-bootstrap/Image';
+import ThumbnailImage1 from './multicolour.jpg';
+import ThumbnailImage2 from './multiracial-hands.jpeg';
+import ThumbnailImage3 from './unity-2.png';
+import ThumbnailImage4 from './love-grow-serve.jpg';
+
 
 
 
@@ -25,7 +21,7 @@ class Home extends React.Component {
   <div className="row">
 
   <div className="col col-sm-4">
-    <p><h1>Arrive and Thrive</h1></p>
+    <p><h1 className = "motto">Arrive and Thrive</h1></p>
   </div>
 
   <div className="col col-sm-8">
@@ -65,13 +61,13 @@ class Home extends React.Component {
     
   <div className="row">
   <div className="col">
-<img src={ThumnailImage1} className="rounded-circle" alt="Cinque Terre" width="304" height="236"/>
+<img src={ThumbnailImage1} className="rounded-circle" alt="Cinque Terre" width="304" height="236"/>
 </div>
 <div className="col">
-<img src={ThumnailImage2} className="rounded-circle" alt="Cinque Terre" width="304" height="236"/>
+<img src={ThumbnailImage2} className="rounded-circle" alt="Cinque Terre" width="304" height="236"/>
 </div>
 <div className="col">
-<img src={ThumnailImage3} className="rounded-circle" alt="Cinque Terre" width="304" height="236"/>
+<img src={ThumbnailImage3} className="rounded-circle" alt="Cinque Terre" width="304" height="236"/>
 </div>
 </div>
 </div>
