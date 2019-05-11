@@ -9,6 +9,7 @@ import Translator from "./pages/Translator";
 // the hook
 import { useTranslation } from 'react-i18next';
 import "./i18n"
+import { basename } from "path";
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
 
   return (
     // Router component initialized to virtual DOM
-    <Router>
+    
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar />
         <Switch>

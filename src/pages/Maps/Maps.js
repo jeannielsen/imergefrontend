@@ -81,27 +81,28 @@ class Maps extends Component {
         }
 
       //Gets invoked on sidepanel category selection
-      changecategorySelectionMode(newCategory, restaurantType){
+      changecategorySelectionMode = (newCategory, restaurantType) => {
         console.log("inside parent");
         console.log("newCategory",newCategory,"restaurantType",restaurantType);
-              if (newCategory === "restaurant" ||newCategory === "store")
-        {
+        if (newCategory === "restaurant" ||newCategory === "store"){
            console.log("inside if",newCategory,restaurantType);
-           MapsAPI.getRestaurantOrGroceryAPI(this.state.lat,this.state.long,newCategory,restaurantType).then(res =>
-            // console.log("offices",res.data)
-            this.setState({
-              immigrationOfficesApiData: res.data.results
-            })
+           MapsAPI.getRestaurantOrGroceryAPI(this.state.lat,this.state.long,newCategory,restaurantType).then(res => {
+            console.log("offices",res)
+              this.setState({
+                immigrationOfficesApiData: res.data.results
+              })
+            }
            )
            .catch(err => console.log(err)); 
       }
       else{
-        console.log("inside else",newCategory,restaurantType);
-           MapsAPI.getApiData(this.state.lat,this.state.long,newCategory).then(res =>
-            // console.log("offices",res.data)
+        // console.log("inside else",newCategory,restaurantType);
+           MapsAPI.getApiData(this.state.lat,this.state.long,newCategory).then(res => {
+            console.log("offices",res)
             this.setState({
               immigrationOfficesApiData: res.data.results
             })
+          }
            )
            .catch(err => console.log(err)); 
       }
