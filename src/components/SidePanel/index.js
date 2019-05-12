@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import {CategoryOptionsPanel} from '../CategoryOptionsPanel';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import "./style.css";
  import {RestaurantOptionsPanel} from '../RestaurantOptionsPanel';
  import {GroceryOptionsPanel} from '../GroceryOptionsPanel';
