@@ -16,21 +16,14 @@
 }
 
 .categoryOptionsCol {
-
     padding: 4px;
-    /* height:0%; */
+   
 }
 
 .card-img-top {
     width: 70%;
     margin: 10%;
-    /* height: 8%; */
-    /* margin-top: 5px; */
-}
-
-.cardbox {
-    /* height: auto !important; */
-}
+ }
 
 .SidePanelOption{
     height:10px;
