@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95f8316868cfeec0b094b5300a8018f7",
+    "revision": "39e535faa4a263568e43e44b2456d2fd",
     "url": "/imergefrontend/index.html"
   },
   {
-    "revision": "0e5819e7b77c30210e08",
-    "url": "/imergefrontend/static/css/main.b65f211d.chunk.css"
+    "revision": "1a12b85fe4f74259de58",
+    "url": "/imergefrontend/static/css/main.de5aab83.chunk.css"
   },
   {
-    "revision": "0224bcee0d59aee5615f",
-    "url": "/imergefrontend/static/js/2.6111c9eb.chunk.js"
+    "revision": "1b1131101b822fb60ceb",
+    "url": "/imergefrontend/static/js/2.c2c88367.chunk.js"
   },
   {
-    "revision": "0e5819e7b77c30210e08",
-    "url": "/imergefrontend/static/js/main.35e9217f.chunk.js"
+    "revision": "1a12b85fe4f74259de58",
+    "url": "/imergefrontend/static/js/main.9acf0485.chunk.js"
   },
   {
     "revision": "8017c2b5250916e9603a",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e61807dc27ea8ce55807cda8c1f72169",
     "url": "/imergefrontend/static/media/Restaurant.e61807dc.jpg"
-  },
-  {
-    "revision": "502d17b017bb372b563e764616119aa3",
-    "url": "/imergefrontend/static/media/airport-icon.502d17b0.png"
   },
   {
     "revision": "1f3a13a3e50f20194deab78ca0b62aad",
@@ -48,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/flag-2.1104ea24.jpg"
   },
   {
+    "revision": "295f978757b6d7eb8d495d5a4a2458f7",
+    "url": "/imergefrontend/static/media/flag-3.295f9787.png"
+  },
+  {
     "revision": "193ff50a1f86e992eb97de99e81d7256",
     "url": "/imergefrontend/static/media/grocery-icon.193ff50a.png"
   },
@@ -56,12 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/hospital-icon.72e3e78e.png"
   },
   {
+    "revision": "f885450b2b5a61157e198a2c60d3d542",
+    "url": "/imergefrontend/static/media/icon-head.f885450b.png"
+  },
+  {
     "revision": "85bb231a47b1d0d8605587f68d6a9526",
     "url": "/imergefrontend/static/media/immigrants.85bb231a.png"
   },
   {
     "revision": "b3bb92e47e49fdb15a31a21a61793e29",
     "url": "/imergefrontend/static/media/immigration-icon.b3bb92e4.png"
+  },
+  {
+    "revision": "5bc0ce2f0d7680a9997f3b41d32c18cf",
+    "url": "/imergefrontend/static/media/kids-flag.5bc0ce2f.jpg"
   },
   {
     "revision": "63ae171ee048ac711c2da905195ad650",
@@ -80,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/movie-2-icon.d0c1ccd4.jpg"
   },
   {
-    "revision": "8690110d5c38bc95053585a733884fa9",
-    "url": "/imergefrontend/static/media/multicolour.8690110d.jpg"
+    "revision": "6bdb47622eef2a7b330388944c45e162",
+    "url": "/imergefrontend/static/media/multicolour.6bdb4762.jpg"
   },
   {
     "revision": "2a585b13153f8a574a0b89ac1970c6df",
