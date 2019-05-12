@@ -1,4 +1,4 @@
-.container {
+/* .container {
   background-color: wheat;
 }
 
@@ -40,10 +40,11 @@
 }
 
 .imageBox ul li{
-    list-style: none;
-    width: 20%;
-    box-sizing: border-box;
-}
+    /* list-style: none; */
+    /* width: 20%; */
+    /* max-height: 20%; */
+    /* box-sizing: border-box; */
+/* }
 
 .imageBox ul li a {
     color: #fff;
@@ -58,10 +59,10 @@ ul {
 
 .one_card {
     border: 1px solid #cccccc;
-    width: 30%;
-    margin: 5px;
+    /* width: 30%; */
+    /* margin: 5px;
     padding: 5px;
-    background-color: tan;
+    background-color: #CAEBF2;
 }
 
 .image_box {
@@ -73,5 +74,14 @@ ul {
     vertical-align: bottom;
     width: auto;
     height: 50px;
-}
+} */  
 
+.agencySubCards{
+    background-color: #CAEBF2;
+    /* background-color: lightcoral; */
+    margin-bottom: 30px;
+}
+.image_box{
+    background-color: lightcoral;
+    /* margin-left: 10px; */
+}

@@ -6,8 +6,13 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   es: {
     translation: {
-      "Latest News":"Últimas Noticias",
-      "Arrive and Thrive":"Llegar y Prosperar",
+      "Latest News":"Últimas noticias",
+      "Our Services":"Nuestros servicios",
+      "We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.":"También nos esforzamos para ayudar a los inmigrantes a integrarse en la sociedad estadounidense y lidiar con la burocracia y las leyes necesarias para convertirse en un ciudadano estadounidense productivo.",
+      "We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.":"Creemos que la diversidad hace que Estados Unidos sea más fuerte y que debemos celebrar, no solo tolerar las diferentes expresiones culturales e ideales que los inmigrantes traen a este país. La diversidad amplía nuestra perspectiva, brindando nuevas ideas y experiencias diferentes que inspiran innovación y creatividad. Una sociedad diversa facilita la aceptación. Nos enseña a aceptar las diferencias en los demás y mirar más allá del lenguaje, la raza y la religión.",
+      "Arrive":"Llegar",
+      "&":"Y",
+      "Thrive":"Prosperar",
       "Select a category you need":"Seleccione la categoría que necesita",
       "Click on the markers for nearby Mosque details":"Haga clic en los marcadores para detalles de la mezquita cercana",
       "Click on the markers for nearby Church details":"Haga clic en los marcadores para detalles de la iglesia cercana",
@@ -101,7 +106,12 @@ const resources = {
   fr: {
     translation: {
       "Latest News":"Dernières Nouvelles",
-      "Arrive and Thrive":"Arriver et Prospérer",
+      "Our Services":"Nos Services",
+      "We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.":"Nous sommes convaincus que la diversité renforce l’Amérique et que nous devons célébrer et non pas tolérer les expressions culturelles et les idéaux différents que les immigrants apportent à ce pays. La diversité élargit notre perspective, apportant de nouvelles idées et des expériences différentes qui inspirent innovation et créativité. facilite l'acceptation. Cela nous apprend à accepter les différences chez les autres et à regarder au-delà de la langue, de la race et de la religion.",
+      "We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.":"Nous nous efforçons également d'aider les immigrants à s'intégrer à la société américaine et à faire face à la bureaucratie et aux lois nécessaires pour devenir un citoyen américain productif.",
+      "Arrive":"Arrivée",
+      "&":"Et",
+      "Thrive":"Prospérer",
       "Select a category you need":"Sélectionnez une catégorie dont vous avez besoin",
       "Click on the markers for nearby Mosque details":"Cliquez sur les marqueurs pour plus de détails sur la mosquée",
       "Click on the markers for nearby Church details":"Cliquez sur les marqueurs pour plus de détails sur l'église",

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SidePanel from "../../components/SidePanel";
 import "../../components/InnerMap/style.css";
 import MapsAPI from "../../utils/API";
+// import { google } from "google-maps";
 
 class Maps extends Component {
   constructor() {
@@ -33,8 +34,11 @@ class Maps extends Component {
                           let marker = new window.google.maps.Marker({
                            map: map,
                            position: {lat: eachValue.geometry.location.lat, lng: eachValue.geometry.location.lng},
-                           
+                           optimized: false
                        });
+                       
+
+                      //  marker.setAttribute("className","bounce");
                        console.log("place-id",eachValue.place_id);
        
                        MapsAPI.getCid(eachValue.place_id).then(res =>
@@ -147,21 +151,22 @@ class Maps extends Component {
       map: map,
       position: {lat: this.state.lat, lng: this.state.long},
     });
+    // marker.setAttribute("className","bounce");
   }//End of showPosition
      
   render() {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col-sm-3">
             {/* Calling SidePanel instance */}
             <SidePanel onClick = {this.changecategorySelectionMode}>
             </SidePanel >
           </div>
-          <div className="col-sm-8">
+          <div className="col-sm-9">
             {/* Map div */}
             {/* <InnerMap > */}
-            <div className="card" id='map' >
+            <div className="card cardLayout" id='map' >
             </div>
             {/* </InnerMap>  */}
           </div>
