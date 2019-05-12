@@ -4,10 +4,7 @@ import { withTranslation } from 'react-i18next';
 import i18n from "../../i18n";
 import "./style.css";
 
-
-
 const Navbar = () => {
-
 
     const setLanguage = (langCode) => {
         i18n.changeLanguage(langCode)
@@ -18,12 +15,13 @@ const Navbar = () => {
 
             });
     };
-
+    
     return (
         <header>
             <h2>Imerge</h2>
             <nav>
                 <ul>
+                    {/* TODO: i18n navbar names */}
                     <li> <Link to="/">Home</Link></li>
                     <li> <Link to="/Agencies">Agencies</Link></li>
                     <li> <Link to="/Maps">Maps</Link></li>
@@ -39,6 +37,7 @@ const Navbar = () => {
             </nav>
         </header>
     );
+
 };
 
 export default withTranslation()(Navbar);

@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import "./home.css";
 import BackgroundImage1 from './flag-2.jpg';
 import BackgroundImage2 from './kidsgroup.jpg';
@@ -10,10 +10,11 @@ import ThumbnailImage3 from './unity-2.png';
 import ThumbnailImage4 from './love-grow-serve.jpg';
 
 
-
-
-
 class Home extends React.Component {
+  constructor({ t, i18n }) {
+    super({ t, i18n })
+    this.t = t
+  }
   render () {
     return (
  
@@ -21,7 +22,7 @@ class Home extends React.Component {
   <div className="row">
 
   <div className="col col-sm-4">
-    <p><h1 className = "motto">Arrive and Thrive</h1></p>
+    <p><h1 className = "motto">{this.t('Arrive and Thrive')}</h1></p>
   </div>
 
   <div className="col col-sm-8">
@@ -48,8 +49,8 @@ class Home extends React.Component {
   <div className="col col-sm-5">
     <div className="card">
       <div className="card-header">
-        Latest News
-      </div>
+        {this.t("Latest News")}
+             </div>
         <ul className="list-group list-group-flush">
         <li className="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus. Auctor urna nunc id cursus metus aliquam eleifend mi in. Orci eu lobortis elementum nibh tellus. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Est pellentesque elit ullamcorper dignissim cras. Euismod nisi porta lorem mollis aliquam ut porttitor leo a.</li>
         <li className="list-group-item">Sed viverra ipsum nunc aliquet bibendum enim. Cursus sit amet dictum sit amet justo donec. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Tortor dignissim convallis aenean et. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ullamcorper malesuada proin libero nunc consequat. Aenean pharetra magna ac placerat vestibulum lectus.</li>
@@ -76,4 +77,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;   
+export default withTranslation()(Home);  

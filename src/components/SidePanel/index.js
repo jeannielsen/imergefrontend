@@ -42,6 +42,7 @@ class SidePanel extends Component {
       TempleIcon:TempleImage,
       ChurchIcon:ChurchImage,
       MosqueIcon:MosqueImage,
+      // TODO: i18next text
       text: "Select a category you need",
       mode:'categoryOptions'
     }
@@ -68,6 +69,7 @@ class SidePanel extends Component {
   handleRestaurantClick() {
     // this.props.onClick("restaurant");
     this.setState({mode: 'restaurant',
+    // TODO: i18n text
     text: 'Choose Restaurant Type'});
     
    }
@@ -81,11 +83,13 @@ class SidePanel extends Component {
 
   handleGroceryClick() {
     this.setState({mode: 'store',
+    // TODO: i18next text
     text: 'Choose Grocery Type'});
    }
 
    handleEmbassyClick(){
     this.setState({mode: 'embassy',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Embassy details'});
     this.props.onClick("embassy");
   }
@@ -93,6 +97,7 @@ class SidePanel extends Component {
   // Function for handleImmigrationOfficeClick
   handleImmigrationOfficeClick() {
     this.setState({mode: 'local_government_office',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Government office details'});
     this.props.onClick("local_government_office");
   //  this.addCuisines()
@@ -100,66 +105,77 @@ class SidePanel extends Component {
 
   handleHealthCareClick(){
     this.setState({mode: 'hospital',
+      // TODO: i18next text
     text: 'Click on the markers for nearby HealthCare details'});
     this.props.onClick("hospital");
   }
 
   handlePostOfficeClick(){
     this.setState({mode: 'postOffice',
+        // TODO: i18next text
     text: 'Click on the markers for nearby postoffice details'});
     this.props.onClick("post_office");
   }
 
   handleSchoolClick(){
     this.setState({mode: 'school',
+        // TODO: i18next text
     text: 'Click on the markers for nearby School details'});
     this.props.onClick("school");
   }
 
   handleBankClick(){
     this.setState({mode: 'bank',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Bank details'});
     this.props.onClick("bank");
   }
 
   handleBusStopClick(){
     this.setState({mode: 'busStop',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Bus Stop details'});
     this.props.onClick("bus_station");
   }
 
   handleParkClick(){
     this.setState({mode: 'park',
+      // TODO: i18next text
     text: 'Click on the markers for nearby Park details'});
     this.props.onClick("park");
   }
 
   handleAirportClick(){
     this.setState({mode: 'airport',
+      // TODO: i18next text
     text: 'Click on the markers for nearby Airport details'});
     this.props.onClick("airport");
   }
 
   handleMovieClick(){
     this.setState({mode: 'movie',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Movie Theatre details'});
     this.props.onClick("movie_theater");
   }
 
   handleTempleClick(){
     this.setState({mode: 'temple',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Temple details'});
     this.props.onClick("hindu_temple");
   }
 
   handleChurchClick(){
-    this.setState({mode: 'church',
+    this.setState({mode: 'church',   
+     // TODO: i18next text
     text: 'Click on the markers for nearby Church details'});
     this.props.onClick("church");
   }
 
   handleMosqueClick(){
     this.setState({mode: 'mosque',
+        // TODO: i18next text
     text: 'Click on the markers for nearby Mosque details'});
     this.props.onClick("mosque");
   }
