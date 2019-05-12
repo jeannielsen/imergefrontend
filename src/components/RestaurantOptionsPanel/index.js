@@ -54,11 +54,7 @@ export class RestaurantOptionsPanel extends React.Component {
         
  <div>
   <input type="radio" id={cuisineType} name={cuisineType}  value={cuisineType} checked={this.state.selectedRadioButton === cuisineType} onClick = {this.handleRestaurantRadioClick} />{cuisineType}
-  {/* <label class="custom-control-label" for="customRadio1">{props.restaurantType}</label> */}
-{/* <form >
-  <input type="radio" name="gender" value="male"> Male<br> */}
-{/* onClick = handleRestaurantRadioClick */}
-</div>  
+  </div>  
 
     )
 });
@@ -67,10 +63,7 @@ return(
   <div>
 <div>{radioButtons}</div>
 
-{/* Using short circuit operator to render restaurantTypeSelected if selectedRadioButton !=empty string*/}
- {/* { */}
-{/* // restaurantTypeSelected && (<RestaurantApiDataStateChange radioButtonSelected = {this.state.selectedRadioButton}/>)
-// } */}
+
 
 </div>
 )

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withTranslation } from 'react-i18next';
 import {CategoryOptionsPanel} from '../CategoryOptionsPanel';
+import { Link } from 'react-router-dom';
 import "./style.css";
  import {RestaurantOptionsPanel} from '../RestaurantOptionsPanel';
  import {GroceryOptionsPanel} from '../GroceryOptionsPanel';
@@ -185,12 +186,12 @@ class SidePanel extends Component {
     return (
     <div className="card cardbox" >
       {/* Main card header */}
-      <div className="card-header">
+      <div className="card-header sidePanelCardGHeader">
       {
           !categoryOptions && (
             <div className = "GoBack">
-             <a  className="back" href="/Maps">{t("Go back")}</a>
-          </div>
+             <Link  className="back" to ="/Maps">{t("Go back")}</Link>
+           </div>
           )
       }
         {this.state.text}
@@ -206,112 +207,100 @@ class SidePanel extends Component {
       {/* First row */}
         <div className = "row categoryOptionsButton" >
           {/* subcards */}
-          <div className = "col-sm-6" >
-          <a href = '#' onClick = {this.handleRestaurantClick}>
+          <div className = "col-sm-4 categoryOptionsCol" >
+          <a href = '#' className= "SidePanelOption" onClick = {this.handleRestaurantClick}>
             <CategoryOptionsPanel text = {t("Restaurants")} image ={this.state.RestaurnatIcon}/>
          </a>
           </div>
-          <div className = "col-sm-6" >
-          <a href = '#' onClick = {this.handleGroceryClick}>
+          <div className = "col-sm-4 categoryOptionsCol" >
+          <a href = '#' className= "SidePanelOption" onClick = {this.handleGroceryClick}>
             <CategoryOptionsPanel text = {t("Grocery Stores")} image ={this.state.GroceryIcon}/>
             </a>
+             </div>
+             <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleMovieClick}>
+          <CategoryOptionsPanel text = {t("Movie Theaters")} image ={this.state.MovieIcon}/>
+          </a>
           </div>
-        </div>
+           </div>
       
 
         {/* Second row */}
         <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6 ">
-        <a href = '#' onClick = {this.handleImmigrationOfficeClick}>
+        <div className = "col-sm-4 categoryOptionsCol">
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleImmigrationOfficeClick}>
           <CategoryOptionsPanel text = {t("Government Offices")} image ={this.state.GovtOfficeIcon}/>
           </a>
           </div>
-          <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleEmbassyClick}>
+          <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleEmbassyClick}>
           <CategoryOptionsPanel text = {t("Embassy")} image ={this.state.EmbassyIcon}/>
           </a>
           </div>
-        </div>
-      
-      {/* Third row */}
-      <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleBankClick}>
-          <CategoryOptionsPanel text = {t("Banks")} image ={this.state.BankIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleHealthCareClick}>
-          <CategoryOptionsPanel text = {t("HealthCare")} image ={this.state.HealthCareIcon}/>
-          </a>
-          </div>
-        </div>
-
-         {/* Fourth row */}
-      <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6" >
-        <a href = '#'onClick = {this.handleSchoolClick}>
-          <CategoryOptionsPanel text = {t("Schools")} image ={this.state.SchoolIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-6" >
+          <div className = "col-sm-4 categoryOptionsCol" >
         <a href = '#' onClick = {this.handlePostOfficeClick}>
           <CategoryOptionsPanel text = {t("Post Offices")} image ={this.state.PostOfficeIcon}/>
           </a>
           </div>
-        </div> 
-    
-         {/* Fifth row */}
+        </div>
+
+        {/* Third row */}
       <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleBusStopClick}>
+        <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption"onClick = {this.handleBusStopClick}>
           <CategoryOptionsPanel text ={t("Bus Stops")} image ={this.state.BusStopIcon}/>
           </a>
           </div>
-          <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleAirportClick}>
+          <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleParkClick}>
+          <CategoryOptionsPanel text = {t("Public Parks")} image ={this.state.ParkIcon}/>
+          </a>
+          </div>
+          <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleAirportClick}>
           <CategoryOptionsPanel text = {t("Airports")} image ={this.state.AirportIcon}/>
           </a>
           </div>
         </div>
-
-         {/* Sixth row */}
+      
+      {/* Fourth row */}
       <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleMovieClick}>
-          <CategoryOptionsPanel text = {t("Movie Theaters")} image ={this.state.MovieIcon}/>
+      <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleSchoolClick}>
+          <CategoryOptionsPanel text = {t("Schools")} image ={this.state.SchoolIcon}/>
           </a>
           </div>
-          <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleParkClick}>
-          <CategoryOptionsPanel text = {t("Public Parks")} image ={this.state.ParkIcon}/>
+        <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleBankClick}>
+          <CategoryOptionsPanel text = {t("Banks")} image ={this.state.BankIcon}/>
+          </a>
+          </div>
+          <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleHealthCareClick}>
+          <CategoryOptionsPanel text = {t("HealthCare")} image ={this.state.HealthCareIcon}/>
           </a>
           </div>
         </div>
-
-         {/* Seventh row */}
-      <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleTempleClick}>
+                  
+         {/* Fifth row */}
+        <div className = "row categoryOptionsButton" >
+        <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleTempleClick}>
           <CategoryOptionsPanel text ={t("Temples")} image ={this.state.TempleIcon}/>
           </a>
           </div>
-          <div className = "col-sm-6" >
-        <a href = '#' onClick = {this.handleChurchClick}>
+          <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleChurchClick}>
           <CategoryOptionsPanel text = {t("Churches")} image ={this.state.ChurchIcon}/>
           </a>
           </div>
-        </div>
-
-         {/* Eighth row */}
-      <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-6 " >
-        <a href = '#' onClick = {this.handleMosqueClick}>
+          <div className = "col-sm-4 categoryOptionsCol" >
+        <a href = '#' className= "SidePanelOption" onClick = {this.handleMosqueClick}>
           <CategoryOptionsPanel text = {t("Mosques")} image ={this.state.MosqueIcon}/>
           </a>
           </div>
-          </div>
-        
+        </div>
+                
       </div>
     
           )
