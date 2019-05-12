@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import {CategoryOptionsPanel} from '../CategoryOptionsPanel';
 import { Link } from 'react-router-dom';
@@ -190,8 +191,10 @@ class SidePanel extends Component {
       {
           !categoryOptions && (
             <div className = "GoBack">
+
              <Link  className="back" to ="/Maps">{t("Go back")}</Link>
            </div>
+
           )
       }
         {this.state.text}
