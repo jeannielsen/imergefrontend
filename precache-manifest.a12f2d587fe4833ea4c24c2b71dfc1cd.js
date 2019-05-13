@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3de774bad8eeb2fd93307964279e4b0",
+    "revision": "eadcd8793b21b1996b39077092e08633",
     "url": "/imergefrontend/index.html"
   },
   {
-    "revision": "3e00e08b8accb881d833",
-    "url": "/imergefrontend/static/css/main.3129b8fe.chunk.css"
+    "revision": "7c69dda38c67a80888d1",
+    "url": "/imergefrontend/static/css/main.cdabadfb.chunk.css"
   },
   {
-    "revision": "aa0121ba06306120dcf5",
-    "url": "/imergefrontend/static/js/2.0b7b5b7f.chunk.js"
+    "revision": "a3cd1fb2adb604de1fe6",
+    "url": "/imergefrontend/static/js/2.05f90f1f.chunk.js"
   },
   {
-    "revision": "3e00e08b8accb881d833",
-    "url": "/imergefrontend/static/js/main.df2370ce.chunk.js"
+    "revision": "7c69dda38c67a80888d1",
+    "url": "/imergefrontend/static/js/main.1a4340fd.chunk.js"
   },
   {
     "revision": "8017c2b5250916e9603a",
@@ -60,20 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/icon-head.f885450b.png"
   },
   {
-    "revision": "85bb231a47b1d0d8605587f68d6a9526",
-    "url": "/imergefrontend/static/media/immigrants.85bb231a.png"
+    "revision": "e738e90ddda086ce905a7c954e19df04",
+    "url": "/imergefrontend/static/media/immigrants.e738e90d.png"
   },
   {
     "revision": "b3bb92e47e49fdb15a31a21a61793e29",
     "url": "/imergefrontend/static/media/immigration-icon.b3bb92e4.png"
   },
   {
-    "revision": "5bc0ce2f0d7680a9997f3b41d32c18cf",
-    "url": "/imergefrontend/static/media/kids-flag.5bc0ce2f.jpg"
+    "revision": "baf4fc0572a3ba1b592014331edc1536",
+    "url": "/imergefrontend/static/media/kids-flag.baf4fc05.jpg"
   },
   {
-    "revision": "63ae171ee048ac711c2da905195ad650",
-    "url": "/imergefrontend/static/media/kidsgroup.63ae171e.jpg"
+    "revision": "1a1166a3ae0af49e725d3d73de504ed2",
+    "url": "/imergefrontend/static/media/kidsgroup.1a1166a3.jpg"
   },
   {
     "revision": "36d7431729427232f6535f0f5beb0cd1",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/park-icon.0d2ed851.png"
   },
   {
-    "revision": "a249146ff4dcf503f9ae94edd2f913cf",
-    "url": "/imergefrontend/static/media/people.a249146f.jpg"
+    "revision": "dc1d203df189701e75c9b7e396c63fbd",
+    "url": "/imergefrontend/static/media/people.dc1d203d.jpg"
   },
   {
     "revision": "727437e7c0569503e37fe12dce95a75d",
