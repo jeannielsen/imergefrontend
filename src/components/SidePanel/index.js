@@ -432,7 +432,6 @@ class SidePanel extends Component {
           )
           }
 
-
  {/* Using short circuit operator to render Grocery store radio button options if mode =restaurantoptions */}
  {
           (GroceryOptions) && (
