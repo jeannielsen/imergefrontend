@@ -21,4 +21,4 @@ Bootstrap
 
 ### Website Deployed at:  https://jeannielsen.github.io/imergefrontend/
 
-
+![Screenshot_1](/images/Screenshot_1.png)

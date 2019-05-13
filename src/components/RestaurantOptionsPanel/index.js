@@ -1,6 +1,7 @@
 import React from "react";
 import MapsAPI from "../../utils/API";
 import Maps from "../../pages/Maps";
+import { Translation } from 'react-i18next';
 import {RestaurantApiDataStateChange} from '../RestaurantApiDataStateChange';
 
 export class RestaurantOptionsPanel extends React.Component {
@@ -47,11 +48,10 @@ export class RestaurantOptionsPanel extends React.Component {
     //Using array map function to get radiobutton for each cuisine type
     const radioButtons = cuisines.map(cuisineType => {
     return (
-        
+     
  <div>
   <input type="radio" id={cuisineType} name={cuisineType}  value={cuisineType} checked={this.state.selectedRadioButton === cuisineType} onClick = {this.handleRestaurantRadioClick} />{cuisineType}
   </div>  
-
     )
 });
       

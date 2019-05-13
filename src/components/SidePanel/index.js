@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import {CategoryOptionsPanel} from '../CategoryOptionsPanel';
 import "./style.css";
 import {RestaurantOptionsPanel} from '../RestaurantOptionsPanel';
@@ -43,7 +44,7 @@ class SidePanel extends Component {
       ChurchIcon:ChurchImage,
       MosqueIcon:MosqueImage,
       // TODO: i18next text
-      text: "Select a category you need",
+      text: (this.t("Select a category you need")),
       mode:'categoryOptions',
       selectedRadio:""
     }
