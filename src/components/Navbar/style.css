@@ -55,9 +55,7 @@ nav li a {
      background-color: lightseagreen;
 }
 
-.links{
-    text-align: end;
-}
+
 .icon{
     width:4%;
     
@@ -66,4 +64,7 @@ h1{
     color: beige;
     
     
+}
+.languageButtons{
+    text-align: end;;
 }
