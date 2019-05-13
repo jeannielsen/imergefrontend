@@ -35,7 +35,7 @@
 }
 
 .SidePanelOption{
-    height:10px;
+    /* height:10px; */
 }
 
 .categoryOptionsButton{
@@ -50,7 +50,8 @@
 .category{
     border: solid thin lightcoral;
     text-align: center;
-    /* height: 0%; */
+    width: 100%;
+    height: 100%;
     
    
     /* animation-duration: 3s; */
@@ -62,6 +63,10 @@
         width: 100%;
         height: 100%;
    
+}
+map{
+    width: 100%;
+    height: 100%;
 }
 
 

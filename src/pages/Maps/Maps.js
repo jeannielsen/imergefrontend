@@ -3,7 +3,6 @@ import { withTranslation } from 'react-i18next';
 import SidePanel from "../../components/SidePanel";
 import "../../components/InnerMap/style.css";
 import MapsAPI from "../../utils/API";
-// import { google } from "google-maps";
 
 class Maps extends Component {
   constructor({ t, i18n }) {
@@ -160,12 +159,12 @@ class Maps extends Component {
     return (
       <div className="container-fluid">
         <div className="row sidePanelMapRow">
-          <div className="col-sm-3">
+          <div className="col col-12 col-md-3 col-sm-12">
             {/* Calling SidePanel instance */}
             <SidePanel onClick = {this.changecategorySelectionMode}>
             </SidePanel >
           </div>
-          <div className="col-sm-9">
+          <div className="col col-12 col-md-9 col-sm-12">
             {/* Map div */}
             {/* <InnerMap > */}
             <div className="card cardLayout" id='map' >
