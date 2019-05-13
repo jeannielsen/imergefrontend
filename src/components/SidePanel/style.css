@@ -29,7 +29,10 @@
 }
 
 .cardbox {
-    /* height: auto !important; */
+    height: 1000px;
+}
+.sidePanelMapRow{
+    height: 1000px;
 }
 
 .SidePanelOption{
@@ -61,3 +64,5 @@
         height: 100%;
    
 }
+
+

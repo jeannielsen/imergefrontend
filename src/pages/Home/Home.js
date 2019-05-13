@@ -8,9 +8,9 @@ import ThumbnailImage1 from './multicolour.jpg';
 import ThumbnailImage2 from './multiracial-hands.jpeg';
 import ThumbnailImage3 from './unity-2.png';
 import ThumbnailImage4 from './color-hand.jpg';
-import BackgroundImage4 from './flag-3.png';
-import BackgroundImage5 from './kids-flag.jpg';
-import BackgroundImage6 from './love-grow-serve.jpg';
+import BackgroundImage4 from './kids-flag.jpg';
+import BackgroundImage5 from './people.jpg';
+import BackgroundImage6 from './group.jpg';
 
 
 
@@ -19,26 +19,29 @@ class Home extends React.Component {
     return (
  
 <div className="container-fluid">
-  <div className="row">
+  <div className="row carouselRow">
 
   <div className="col col-sm-8">
 <div id="carouselSlides" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-        <img src={BackgroundImage1} className="mx-auto d-block w-90 slide"  alt="not found"/>
+        <img src={BackgroundImage1} className="mx-auto d-block w-90 slide"  alt="not found" height="640"/>
     </div>
     <div className="carousel-item">
-      <img src={BackgroundImage2} className="mx-auto d-block w-90 slide" alt="..."/>
+      <img src={BackgroundImage2} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
     </div>
     <div className="carousel-item">
-      <img src={BackgroundImage3} className="mx-auto d-block w-90 slide" alt="..."/>
+      <img src={BackgroundImage3} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
     </div>
     <div className="carousel-item">
-      <img src={BackgroundImage4} className="mx-auto d-block w-90 slide" alt="..."/>
+      <img src={BackgroundImage4} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
     </div>
-    {/* <div className="carousel-item">
-      <img src={BackgroundImage5} className="mx-auto d-block w-90 slide" alt="..."/>
-    </div> */}
+     <div className="carousel-item">
+      <img src={BackgroundImage5} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
+    </div> 
+    <div className="carousel-item">
+      <img src={BackgroundImage6} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
+    </div> 
     </div>
   </div>
 </div>
@@ -55,10 +58,10 @@ class Home extends React.Component {
 </div>
 <br/>
 
-<div className="row">
+<div className="row  ">
  
-  <div className="col">
-    <div className="card">
+  {/* <div className="col"> */}
+    <div className="card homeServicesSection">
       <div className="card-header homeServicesHeader">
        <h3> Our Services</h3>
       </div>
@@ -89,7 +92,7 @@ We also strive to help immigrants integrate into American society and deal with 
         </div>
       </div>
   </div>
-  </div>
+  {/* </div> */}
     
   
 </div>

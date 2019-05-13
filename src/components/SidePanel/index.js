@@ -44,7 +44,8 @@ class SidePanel extends Component {
       ChurchIcon:ChurchImage,
       MosqueIcon:MosqueImage,
       text: "Select a category you need",
-      mode:'categoryOptions'
+      mode:'categoryOptions',
+      selectedRadio:""
     }
     this.handleRestaurantClick = this.handleRestaurantClick.bind(this);
     this.handleGroceryClick = this.handleGroceryClick.bind(this);
@@ -62,8 +63,65 @@ class SidePanel extends Component {
     this.handleMosqueClick = this.handleMosqueClick.bind(this);
     this.handlePassedRadioValue = this.handlePassedRadioValue.bind(this);
     this.handleEmbassyClick = this.handleEmbassyClick.bind(this);
+    this.handleMilesSearchClick = this.handleMilesSearchClick.bind(this);
     
   }//End of constructor
+
+  handleMilesSearchClick(event){
+    let milesCalculated = event.target.value*1000;
+     switch(this.state.mode) {
+      case 'restaurant':
+      this.props.onClick("restaurant",milesCalculated,this.state.selectedRadio);
+        break;
+        case 'store':
+      this.props.onClick("store",milesCalculated,this.state.selectedRadio);
+        break;
+      case 'local_government_office':
+    // let milesCalculated = event.target.value*1000;
+    this.props.onClick("local_government_office",milesCalculated);
+        break;
+      case 'embassy':
+      this.props.onClick("embassy",milesCalculated);
+        break;
+        case 'hospital':
+      this.props.onClick("hospital",milesCalculated);
+        break;
+        case 'post_office':
+      this.props.onClick("post_office",milesCalculated);
+        break;
+        case 'bank':
+      this.props.onClick("bank",milesCalculated);
+        break;
+        case 'school':
+      this.props.onClick("school",milesCalculated);
+        break;
+        case 'airport':
+      this.props.onClick("airport",milesCalculated);
+        break;
+        case 'bus_station':
+      this.props.onClick("bus_station",milesCalculated);
+        break;
+        case 'movie_theater':
+      this.props.onClick("movie_theater",milesCalculated);
+        break;
+        case 'park':
+      this.props.onClick("park",milesCalculated);
+        break;
+        case 'hindu_temple':
+      this.props.onClick("hindu_temple",milesCalculated);
+        break;
+        case 'church':
+      this.props.onClick("church",milesCalculated);
+        break;
+        case 'mosque':
+      this.props.onClick("mosque",milesCalculated);
+        break;
+
+      default:
+        // code block
+    }
+
+  }
 
   // Function for handleRestaurantClick
   handleRestaurantClick() {
@@ -74,9 +132,9 @@ class SidePanel extends Component {
    }
 
   handlePassedRadioValue(passedRadioValue){
-    console.log("inside child");
-    
-    this.props.onClick(this.state.mode,passedRadioValue);
+    console.log("inside child handlePassedRadioValue");
+    this.setState({selectedRadio: passedRadioValue});
+    this.props.onClick(this.state.mode,10000,passedRadioValue);
     
   }
 
@@ -88,81 +146,81 @@ class SidePanel extends Component {
    handleEmbassyClick(){
     this.setState({mode: 'embassy',
     text: 'Click on the markers for nearby Embassy details'});
-    this.props.onClick("embassy");
+    this.props.onClick("embassy",10000);
   }
  
   // Function for handleImmigrationOfficeClick
   handleImmigrationOfficeClick() {
     this.setState({mode: 'local_government_office',
     text: 'Click on the markers for nearby Government office details'});
-    this.props.onClick("local_government_office");
+    this.props.onClick("local_government_office",10000);
   //  this.addCuisines()
   }
 
   handleHealthCareClick(){
     this.setState({mode: 'hospital',
     text: 'Click on the markers for nearby HealthCare details'});
-    this.props.onClick("hospital");
+    this.props.onClick("hospital",10000);
   }
 
   handlePostOfficeClick(){
-    this.setState({mode: 'postOffice',
+    this.setState({mode: 'post_office',
     text: 'Click on the markers for nearby postoffice details'});
-    this.props.onClick("post_office");
+    this.props.onClick("post_office",10000);
   }
 
   handleSchoolClick(){
     this.setState({mode: 'school',
     text: 'Click on the markers for nearby School details'});
-    this.props.onClick("school");
+    this.props.onClick("school",10000);
   }
 
   handleBankClick(){
     this.setState({mode: 'bank',
     text: 'Click on the markers for nearby Bank details'});
-    this.props.onClick("bank");
+    this.props.onClick("bank",10000);
   }
 
   handleBusStopClick(){
-    this.setState({mode: 'busStop',
+    this.setState({mode: 'bus_station',
     text: 'Click on the markers for nearby Bus Stop details'});
-    this.props.onClick("bus_station");
+    this.props.onClick("bus_station",10000);
   }
 
   handleParkClick(){
     this.setState({mode: 'park',
     text: 'Click on the markers for nearby Park details'});
-    this.props.onClick("park");
+    this.props.onClick("park",10000);
   }
 
   handleAirportClick(){
     this.setState({mode: 'airport',
     text: 'Click on the markers for nearby Airport details'});
-    this.props.onClick("airport");
+    this.props.onClick("airport",10000);
   }
 
   handleMovieClick(){
-    this.setState({mode: 'movie',
+    this.setState({mode: 'movie_theater',
     text: 'Click on the markers for nearby Movie Theatre details'});
-    this.props.onClick("movie_theater");
+    this.props.onClick("movie_theater",10000);
   }
 
   handleTempleClick(){
-    this.setState({mode: 'temple',
+    this.setState({mode: 'hindu_temple',
     text: 'Click on the markers for nearby Temple details'});
-    this.props.onClick("hindu_temple");
+    this.props.onClick("hindu_temple",10000);
   }
 
   handleChurchClick(){
     this.setState({mode: 'church',
     text: 'Click on the markers for nearby Church details'});
-    this.props.onClick("church");
+    this.props.onClick("church",10000);
   }
 
   handleMosqueClick(){
     this.setState({mode: 'mosque',
     text: 'Click on the markers for nearby Mosque details'});
-    this.props.onClick("mosque");
+    this.props.onClick("mosque",10000);
   }
     
   render() {
@@ -170,18 +228,19 @@ class SidePanel extends Component {
     const categoryOptions = this.state.mode === 'categoryOptions';
     const RestaurantOptions = this.state.mode === 'restaurant';
     const GroceryOptions = this.state.mode === 'store';
-    const ImmigrationOfficeDetails = this.state.mode === 'localGovernmentOffice';
+    const ImmigrationOfficeDetails = this.state.mode === 'local_government_office';
+    const EmbassyDetails = this.state.mode === 'embassy';
     const HealthCareDetails = this.state.mode === 'hospital';
-    const PostOfficeDetails = this.state.mode === 'postOffice';
+    const PostOfficeDetails = this.state.mode === 'post_office';
     const BankDetails = this.state.mode === 'bank';
     const SchoolDetails = this.state.mode === 'school';
     const AirportDetails = this.state.mode === 'airport';
-    const BusStopDetails = this.state.mode === 'busStop';
-    const MovieDetails = this.state.mode === 'movie';
+    const BusStopDetails = this.state.mode === 'bus_station';
+    const MovieDetails = this.state.mode === 'movie_theater';
     const ParkDetails = this.state.mode === 'park';
-    const TempleDetails = this.state.mode === 'temple';
+    const TempleDetails = this.state.mode === 'hindu_temple';
     const ChurchDetails = this.state.mode === 'church';
-    const MosqueDetails = this.state.mode === 'mosqe';
+    const MosqueDetails = this.state.mode === 'mosque';
     const { t } = this.props;
 
     return (
@@ -309,8 +368,40 @@ class SidePanel extends Component {
           )
           }
 
-   
-      {/* Using short circuit operator to render restaurant radio button options if mode =restaurantoptions */}
+
+{/* Using short circuit operator to render nearby immigration offices if mode = 'ImmigrationOffices' */}
+     {
+          (RestaurantOptions||GroceryOptions||ImmigrationOfficeDetails||EmbassyDetails||HealthCareDetails||PostOfficeDetails||BankDetails||SchoolDetails||AirportDetails||BusStopDetails||MovieDetails||ParkDetails||TempleDetails||ChurchDetails||MosqueDetails) && (
+      <div className="card-body">
+        <div className = "row" >
+        <form>
+    <div class="form-group">
+    <label for="formControlSelect1">Select miles to be searched</label>
+    <select class="form-control" id="formControlSelect1" onChange={this.handleMilesSearchClick}>
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+      <option>40</option>
+      <option>50</option>
+      <option>60</option>
+      <option>70</option>
+      <option>80</option>
+      <option>90</option>
+      <option>100</option>
+    </select>
+  </div>
+  </form>
+
+  <div>
+    </div>
+<p>Zoom In/Out the map to see all search results</p>
+        </div>
+      </div>
+    
+          )
+          }
+
+               {/* Using short circuit operator to render restaurant radio button options if mode =restaurantoptions */}
      {
           (RestaurantOptions) && (
       <div className="card-body">
@@ -342,34 +433,6 @@ class SidePanel extends Component {
     
           )
           }
-
-
-
-{/* Using short circuit operator to render nearby immigration offices if mode = 'ImmigrationOffices' */}
-     {
-          ImmigrationOfficeDetails && (
-      <div className="card-body">
-        <div className = "row" >
-        <h1> </h1>
-        </div>
-      </div>
-    
-          )
-          }
-
-{/* Using short circuit operator to render nearby healthcare services if mode = 'HealthCare' */}
-     {
-          HealthCareDetails && (
-      <div className="card-body">
-        <div className = "row" >
-
-        </div>
-      </div>
-    
-          )
-          }
-
-
 
 
     </div>

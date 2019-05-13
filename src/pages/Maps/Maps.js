@@ -85,12 +85,12 @@ class Maps extends Component {
         }
 
       //Gets invoked on sidepanel category selection
-      changecategorySelectionMode = (newCategory, restaurantType) => {
+      changecategorySelectionMode = (newCategory,miles,restaurantType) => {
         console.log("inside parent");
-        console.log("newCategory",newCategory,"restaurantType",restaurantType);
+        console.log("newCategory",newCategory,"restaurantType",restaurantType,"miles",miles);
         if (newCategory === "restaurant" ||newCategory === "store"){
            console.log("inside if",newCategory,restaurantType);
-           MapsAPI.getRestaurantOrGroceryAPI(this.state.lat,this.state.long,newCategory,restaurantType).then(res => {
+           MapsAPI.getRestaurantOrGroceryAPI(this.state.lat,this.state.long,newCategory,restaurantType,miles).then(res => {
             console.log("offices",res)
               this.setState({
                 immigrationOfficesApiData: res.data.results
@@ -101,7 +101,7 @@ class Maps extends Component {
       }
       else{
         // console.log("inside else",newCategory,restaurantType);
-           MapsAPI.getApiData(this.state.lat,this.state.long,newCategory).then(res => {
+           MapsAPI.getApiData(this.state.lat,this.state.long,newCategory,miles).then(res => {
             console.log("offices",res)
             this.setState({
               immigrationOfficesApiData: res.data.results
@@ -157,7 +157,7 @@ class Maps extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <div className="row">
+        <div className="row sidePanelMapRow">
           <div className="col-sm-3">
             {/* Calling SidePanel instance */}
             <SidePanel onClick = {this.changecategorySelectionMode}>
