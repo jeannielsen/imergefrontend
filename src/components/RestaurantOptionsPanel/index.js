@@ -5,7 +5,6 @@ import {RestaurantApiDataStateChange} from '../RestaurantApiDataStateChange';
 
 export class RestaurantOptionsPanel extends React.Component {
 
-
     constructor(props) {
         super(props);
         this.state = {
@@ -15,22 +14,19 @@ export class RestaurantOptionsPanel extends React.Component {
         };
         this.handleRestaurantRadioClick = this.handleRestaurantRadioClick.bind(this);
       }
-    
      
     handleRestaurantRadioClick(event) {
       this.setState({
         selectedRadioButton: event.target.value
       })
-       
+      
         console.log("inside grand child");
         this.props.onClick(event.target.value);
         // this.storeApiData();
         console.log("inside event radiovalue"+event.target.value);
-       
-        
+   
     }
     
-
     componentDidUpdate(){
           
     }

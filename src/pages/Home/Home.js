@@ -75,19 +75,19 @@ class Home extends React.Component {
           <div className="row">
   <div className="col">
 <img src={ThumbnailImage1} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">&emsp;Agencies Info</figcaption>
+<figcaption className="thumbnailCaption">&emsp;{this.t('Agencies Info')}</figcaption>
 </div>
 <div className="col">
 <img src={ThumbnailImage2} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">&emsp;Nearby Facilities map</figcaption>
+<figcaption className="thumbnailCaption">&emsp;{this.t('Nearby Facilities Map')}</figcaption>
 </div>
 <div className="col">
 <img src={ThumbnailImage3} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">Latest News</figcaption>
+<figcaption className="thumbnailCaption">{this.t('Latest News')}</figcaption>
 </div>
 <div className="col">
 <img src={ThumbnailImage4} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">Translator</figcaption>
+<figcaption className="thumbnailCaption">{this.t('Translator')}</figcaption>
 </div>
 </div>
 
