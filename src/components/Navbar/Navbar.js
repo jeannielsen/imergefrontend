@@ -42,7 +42,7 @@ const Navbar = () => {
                         </div>
                         
                     
-                    <li>
+                    <li className="languageButtons">
                         <button onClick={() => setLanguage("en")}>English</button>
                         <button onClick={() => setLanguage("es")}>Español</button>
                         <button onClick={() => setLanguage("fr")}>Français</button>
