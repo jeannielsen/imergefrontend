@@ -25,7 +25,7 @@ class Home extends React.Component {
 <div className="container-fluid">
   <div className="row carouselRow">
 
-  <div className="col col-8">
+  <div className="col col-12 col-md-8 col-sm-12">
 <div id="carouselSlides" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -43,14 +43,11 @@ class Home extends React.Component {
      <div className="carousel-item">
       <img src={BackgroundImage5} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
     </div> 
-    <div className="carousel-item">
-      <img src={BackgroundImage6} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
-    </div> 
-    </div>
+       </div>
   </div>
 </div>
 
-  <div className="col col-4 flex-container">
+  <div className="col col-12 col-md-4 col-sm-12 flex-container">
   
     <div className = "motto display-1">{this.t('Arrive')}</div>
   <div className = "motto display-1">{this.t('&')}</div>
@@ -75,7 +72,7 @@ class Home extends React.Component {
           <div className="row">
   <div className="col">
 <img src={ThumbnailImage1} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">&emsp;{this.t('Agencies Info')}</figcaption>
+<figcaption className="thumbnailCaption">&emsp;{this.t('Agencies Information')}</figcaption>
 </div>
 <div className="col">
 <img src={ThumbnailImage2} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
@@ -83,11 +80,11 @@ class Home extends React.Component {
 </div>
 <div className="col">
 <img src={ThumbnailImage3} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">{this.t('Latest News')}</figcaption>
+<figcaption className="thumbnailCaption">{this.t('Latest News Section')}</figcaption>
 </div>
 <div className="col">
 <img src={ThumbnailImage4} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">{this.t('Translator')}</figcaption>
+<figcaption className="thumbnailCaption">{this.t('Translator Section')}</figcaption>
 </div>
 </div>
 

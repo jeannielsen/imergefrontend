@@ -28,23 +28,23 @@ const Navbar = () => {
                         {/* <div className="col col-sm-1 navList"> */}
                                 {/* <li> <Link to="/">Home</Link></li> */}
                             {/* </div> */}
-                            <div className="col col-sm-2 navList" id="home">
+                            <div className="col col-12 col-md-2 col-sm-2 navList" id="home">
                                 <li> <Link to="/">Home</Link></li>
                             </div>
-                            <div className="col col-sm-2 navList" id="Agencies">
+                            <div className="col col-12 col-md-2 col-sm-2 navList" id="Agencies">
                                 <li> <Link to="/Agencies">Agencies </Link></li>
                             </div>
-                            <div className="col col-sm-2 navList" id="maps">
-                                <li> <Link to="/Maps">Maps </Link></li>
+                            <div className="col col-12 col-md-2 col-sm-2 navList" id="maps">
+                                <li> <Link to="/Maps">Nearby Services </Link></li>
                             </div>
-                            <div className="col col-sm-2 navList" id="news">
+                            <div className="col col-12 col-md-2 col-sm-2 navList" id="news">
                                 <li> <Link to="/News">News </Link></li>
                             </div>
-                            <div className="col col-sm-2 navList" id="translator">
+                            <div className="col col-12 col-md-2 col-sm-2 navList" id="translator">
                                 <li> <Link to="/Translator">Translator </Link></li>
                             </div>
                             
-                            <div className="col col-sm-2" >
+                            <div className="col col-12 col-md-2 col-sm-2" >
                                 <li id="langBtn">
                                 <button onClick={() => setLanguage("en")}>English</button>
                                 <button onClick={() => setLanguage("es")}>Español</button>

@@ -27,18 +27,13 @@ export class GroceryOptionsPanel extends React.Component {
        
         
     }
-    
-
-    componentDidUpdate(){
-          
-    }
-
+        
     render() {
       
     console.log("radiovalue"+this.state.selectedRadioButton);
-    const storeTypes = [ 'American','Arabian','Asian','Chinese',
+    const storeTypes = [ 'Asian','Chinese',
      'European', 'Indian', 'Indonesian', 'Italian', 'Jamaican',
-    'Japanese', 'Korean','Mexican', 'Philippine','Vietnamese']
+    'Japanese', 'Korean','Mexican']
     console.log("restaurant type executing");
 
     //Using array map function to get radiobutton for each cuisine type
