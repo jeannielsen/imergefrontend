@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39e535faa4a263568e43e44b2456d2fd",
+    "revision": "d81be3ba9987370a2a5f488cce6c25a3",
     "url": "/imergefrontend/index.html"
   },
   {
-    "revision": "1a12b85fe4f74259de58",
-    "url": "/imergefrontend/static/css/main.de5aab83.chunk.css"
+    "revision": "fa40642fb4606df56801",
+    "url": "/imergefrontend/static/css/main.3129b8fe.chunk.css"
   },
   {
-    "revision": "1b1131101b822fb60ceb",
-    "url": "/imergefrontend/static/js/2.c2c88367.chunk.js"
+    "revision": "784ac2729b1124c8a877",
+    "url": "/imergefrontend/static/js/2.84a55974.chunk.js"
   },
   {
-    "revision": "1a12b85fe4f74259de58",
-    "url": "/imergefrontend/static/js/main.9acf0485.chunk.js"
+    "revision": "fa40642fb4606df56801",
+    "url": "/imergefrontend/static/js/main.3a389baf.chunk.js"
   },
   {
     "revision": "8017c2b5250916e9603a",
@@ -44,12 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/flag-2.1104ea24.jpg"
   },
   {
-    "revision": "295f978757b6d7eb8d495d5a4a2458f7",
-    "url": "/imergefrontend/static/media/flag-3.295f9787.png"
-  },
-  {
     "revision": "193ff50a1f86e992eb97de99e81d7256",
     "url": "/imergefrontend/static/media/grocery-icon.193ff50a.png"
+  },
+  {
+    "revision": "53d2efc6a2652e2762c7522110b7bcc1",
+    "url": "/imergefrontend/static/media/group.53d2efc6.jpg"
   },
   {
     "revision": "72e3e78e772ee6e61d7ef0d9187312d1",
@@ -76,10 +76,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imergefrontend/static/media/kidsgroup.63ae171e.jpg"
   },
   {
-    "revision": "7351299963c721610f5692eb572053f9",
-    "url": "/imergefrontend/static/media/love-grow-serve.73512999.jpg"
-  },
-  {
     "revision": "36d7431729427232f6535f0f5beb0cd1",
     "url": "/imergefrontend/static/media/mosque-icon.36d74317.png"
   },
@@ -98,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0d2ed85140d7da53ac089a22f916bfcf",
     "url": "/imergefrontend/static/media/park-icon.0d2ed851.png"
+  },
+  {
+    "revision": "a249146ff4dcf503f9ae94edd2f913cf",
+    "url": "/imergefrontend/static/media/people.a249146f.jpg"
   },
   {
     "revision": "727437e7c0569503e37fe12dce95a75d",
