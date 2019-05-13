@@ -1,11 +1,11 @@
 .imerge{
     font-family: 'Bungee Inline', cursive;
     color:#374785;
-    ;
 }
 nav {
     text-align: center;
     /* background-color: dodgerblue; */
+    /* text-align: center; */
     background-color:#3B8BEB;
 }
 
@@ -17,9 +17,10 @@ nav {
     
   } */
 nav ul li {
-    display: inline-block;
-    padding-left: 25px;
-    padding-right: 25px; 
+     display: inline-block;
+    /* padding-left: 25px;
+    padding-right: 25px;  */
+    
 }
 #home
 {background-color: lightcoral;
