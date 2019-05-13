@@ -264,8 +264,8 @@ class SidePanel extends Component {
       {
           !categoryOptions && (
             <div className = "GoBack">
-            <a className="back" href ="/Maps">{t("Go back")}</a>
-             {/* <Link  className="back" to ="/Maps">{t("Go back")}</Link> */}
+            {/* <a className="back" href ="/Maps">{t("Go back")}</a> */}
+             <Link to ="/Maps">Go back</Link>
            </div>
 
           )

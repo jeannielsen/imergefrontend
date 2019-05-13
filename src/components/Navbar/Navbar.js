@@ -25,9 +25,6 @@ const Navbar = () => {
                 <ul>
                     <div className="container-fluid">
                         <div className="row">
-                        {/* <div className="col col-sm-1 navList"> */}
-                                {/* <li> <Link to="/">Home</Link></li> */}
-                            {/* </div> */}
                             <div className="col col-12 col-md-2 col-sm-2 navList" id="home">
                                 <li> <Link to="/">Home</Link></li>
                             </div>
