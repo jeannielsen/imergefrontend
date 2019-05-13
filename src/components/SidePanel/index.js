@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import {CategoryOptionsPanel} from '../CategoryOptionsPanel';
 import "./style.css";
- import {RestaurantOptionsPanel} from '../RestaurantOptionsPanel';
- import {GroceryOptionsPanel} from '../GroceryOptionsPanel';
+import {RestaurantOptionsPanel} from '../RestaurantOptionsPanel';
+import {GroceryOptionsPanel} from '../GroceryOptionsPanel';
 import RestaurantImage from './Restaurant.jpg';
 import GroceryImage from './grocery-icon.png';
 import EmbassyImage from './embassy-icon.png';
@@ -23,9 +23,9 @@ import MosqueImage from './mosque-icon.png';
 
 
 class SidePanel extends Component {
-  
-  constructor() {
-    super();
+  constructor({ t, i18n }) {
+    super({ t, i18n })
+    this.t = t
     this.state = {
       RestaurnatIcon: RestaurantImage,
       GroceryIcon: GroceryImage,

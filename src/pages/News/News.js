@@ -6,8 +6,7 @@ import { List } from "../../components/List";
 import { Col, Row, Container } from "../../components/Grid";
 import { withTranslation } from 'react-i18next';
 import i18n from "../../i18n";
-
-
+import "./style.css";
 
 class News extends Component  {
   constructor({ t, i18n }){
@@ -53,7 +52,7 @@ class News extends Component  {
       to: '2019-05-13',
       language: langCode,
       sortBy: 'relevancy',
-      page: 2
+      page: 3
     })
       .then(res => {
         console.log('this is headline news: ', res);
@@ -107,16 +106,13 @@ class News extends Component  {
         <Row>
           <Col size="md-12">
             <h2>{this.t('News Headlines')}</h2>
-               {/* <ButtonToolbar>
-                  <Button variant="info">English</Button>
-               </ButtonToolbar> */}
           </Col>
           <Col size="md-12">
           </Col>
         </Row>
         <Row>
           <Col size="md-12">
-            <Card2 title={this.t("Results")}>
+            <Card2  title={this.t("Results")}>
               {this.state.news.length ? (
                 <List>
                   {
@@ -130,7 +126,6 @@ class News extends Component  {
                             description={newsItem.description}
                             url={newsItem.url}
                             source={newsItem.source}
-                          // urlToimage={news.urlToImage}
                           />
                         );
                       }
@@ -138,7 +133,7 @@ class News extends Component  {
                   }
                 </List>
               ) : (
-                  <h2 className="text-center">{this.state.message}</h2>
+                  <h3 className="text-center">{this.state.message}</h3>
                 )} </Card2>
           </Col>
         </Row>
@@ -146,6 +141,5 @@ class News extends Component  {
     );
   }
 }
-
 
 export default withTranslation()(News);

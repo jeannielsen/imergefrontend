@@ -16,7 +16,7 @@ const Navbar = () => {
 
             });
     };
-    
+    // TODO: translate navbar headers
     return (
         <header>
             <img  src={BackgroundImage1Icon} className = "icon" alt = "not found"/>
@@ -25,31 +25,33 @@ const Navbar = () => {
                 <ul>
                     <div className="container">
                         <div className="row">
-                        <div className="col col-sm-2 navList" id="home">
-                            <li> <Link to="/">Home</Link></li>
-                         </div>
-                         <div className="col col-sm-2 navList" id="Agencies">
-                        <li> <Link to="/Agencies">Agencies </Link></li>
-                        </div>
-                        <div className="col col-sm-2 navList" id="maps">
-                        <li> <Link to="/Maps">Maps </Link></li>
-                        </div>
-                        <div className="col col-sm-2 navList" id="news">
-                        <li> <Link to="/News">News </Link></li>
-                        </div>
-                        <div className="col col-sm-2 navList" id="translator">
-                        <li> <Link to="/Translator">Translator </Link></li>
-                        </div>
+                            <div className="col col-sm-2 navList" id="home">
+                                <li> <Link to="/">Home</Link></li>
+                            </div>
+                            <div className="col col-sm-2 navList" id="Agencies">
+                                <li> <Link to="/Agencies">Agencies </Link></li>
+                            </div>
+                            <div className="col col-sm-2 navList" id="maps">
+                                <li> <Link to="/Maps">Maps </Link></li>
+                            </div>
+                            <div className="col col-sm-2 navList" id="news">
+                                <li> <Link to="/News">News </Link></li>
+                            </div>
+                            <div className="col col-sm-2 navList" id="translator">
+                                <li> <Link to="/Translator">Translator </Link></li>
+                            </div>
+                            </div>
                         
-                    
-                    <li>
-                        <button onClick={() => setLanguage("en")}>English</button>
-                        <button onClick={() => setLanguage("es")}>Español</button>
-                        <button onClick={() => setLanguage("fr")}>Français</button>
-                    </li>
+                        <div className="row">
+                            <div className="col col-sm-12" >
+                                <li id="langBtn">
+                                <button onClick={() => setLanguage("en")}>English</button>
+                                <button onClick={() => setLanguage("es")}>Español</button>
+                                <button onClick={() => setLanguage("fr")}>Français</button>
+                                </li>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    
                 </ul>
             </nav>
         </header>

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import { withTranslation } from 'react-i18next';
 import SidePanel from "../../components/SidePanel";
 import "../../components/InnerMap/style.css";
 import MapsAPI from "../../utils/API";
 // import { google } from "google-maps";
 
 class Maps extends Component {
-  constructor() {
-    super();
+  constructor({ t, i18n }) {
+    super({ t, i18n })
+    this.t = t
     this.state = {
       lat: 0,
       long: 0,
@@ -176,4 +178,4 @@ class Maps extends Component {
   }//End of render()
 }//End of class
 
-export default Maps;
+export default withTranslation()(Maps); 
