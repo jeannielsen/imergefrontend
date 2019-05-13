@@ -7,6 +7,11 @@ const resources = {
   es: {
     translation: {
       "Latest News":"Últimas noticias",
+      "Select miles to be searched":"Seleccione las millas a buscar",
+      "Zoom In/Out the map to see all search results":"Acercar / alejar el mapa para ver todos los resultados de búsqueda",
+      "Agencies Info":"Información de las Agencias",
+      "Nearby Facilities Map":"Mapa de Instalaciones Cercanas",
+      "Translator":"Traductor",
       "Our Services":"Nuestros servicios",
       "We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.":"También nos esforzamos para ayudar a los inmigrantes a integrarse en la sociedad estadounidense y lidiar con la burocracia y las leyes necesarias para convertirse en un ciudadano estadounidense productivo.",
       "We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.":"Creemos que la diversidad hace que Estados Unidos sea más fuerte y que debemos celebrar, no solo tolerar las diferentes expresiones culturales e ideales que los inmigrantes traen a este país. La diversidad amplía nuestra perspectiva, brindando nuevas ideas y experiencias diferentes que inspiran innovación y creatividad. Una sociedad diversa facilita la aceptación. Nos enseña a aceptar las diferencias en los demás y mirar más allá del lenguaje, la raza y la religión.",
@@ -106,6 +111,10 @@ const resources = {
   fr: {
     translation: {
       "Latest News":"Dernières Nouvelles",
+      "Select miles to be searched":"Sélectionnez les miles à rechercher",
+      "Zoom In/Out the map to see all search results":"Zoom avant / arrière sur la carte pour voir tous les résultats de la recherche",
+      "Agencies Info":"Informations sur les Agences",
+      "Nearby Facilities Map":"Plan des Installations à Proximité",
       "Our Services":"Nos Services",
       "We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.":"Nous sommes convaincus que la diversité renforce l’Amérique et que nous devons célébrer et non pas tolérer les expressions culturelles et les idéaux différents que les immigrants apportent à ce pays. La diversité élargit notre perspective, apportant de nouvelles idées et des expériences différentes qui inspirent innovation et créativité. facilite l'acceptation. Cela nous apprend à accepter les différences chez les autres et à regarder au-delà de la langue, de la race et de la religion.",
       "We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.":"Nous nous efforçons également d'aider les immigrants à s'intégrer à la société américaine et à faire face à la bureaucratie et aux lois nécessaires pour devenir un citoyen américain productif.",

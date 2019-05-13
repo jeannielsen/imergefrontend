@@ -390,7 +390,7 @@ class SidePanel extends Component {
         <div className = "row" >
         <form>
     <div class="form-group">
-    <label for="formControlSelect1">Select miles to be searched</label>
+    <label for="formControlSelect1">{t('Select miles to be searched')}</label>
     <select class="form-control" id="formControlSelect1" onChange={this.handleMilesSearchClick}>
       <option>10</option>
       <option>20</option>
@@ -408,7 +408,7 @@ class SidePanel extends Component {
 
   <div>
     </div>
-<p>Zoom In/Out the map to see all search results</p>
+<p>{t('Zoom In/Out the map to see all search results')}</p>
         </div>
       </div>
     
