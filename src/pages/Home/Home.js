@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import "./home.css";
 import BackgroundImage1 from './flag-2.jpg';
 import BackgroundImage2 from './kidsgroup.jpg';
@@ -15,6 +15,10 @@ import BackgroundImage6 from './group.jpg';
 
 
 class Home extends React.Component {
+  constructor({ t, i18n }) {
+    super({ t, i18n })
+    this.t = t
+  }
   render () {
     return (
  
@@ -48,12 +52,10 @@ class Home extends React.Component {
 
   <div className="col col-sm-4 flex-container">
   
-    <div className = "motto display-1">Arrive</div>
-  <div className = "motto display-1">&</div>
-  <div className = "motto display-1">Thrive</div>
+    <div className = "motto display-1">{this.t('Arrive')}</div>
+  <div className = "motto display-1">{this.t('&')}</div>
+  <div className = "motto display-1">{this.t('Thrive')}</div>
   </div>
-
- 
 
 </div>
 <br/>
@@ -63,12 +65,12 @@ class Home extends React.Component {
   {/* <div className="col"> */}
     <div className="card homeServicesSection">
       <div className="card-header homeServicesHeader">
-       <h3> Our Services</h3>
+       <h3> {this.t('Our Services')}</h3>
       </div>
         <div className="card-body">
         <p className="homeServicesPara">
-        We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.
-We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.
+        {this.t("We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.")}
+{this.t("We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.")}
           </p>
           <div className="row">
   <div className="col">
@@ -101,4 +103,4 @@ We also strive to help immigrants integrate into American society and deal with 
   }
 }
 
-export default Home;   
+export default withTranslation()(Home);  

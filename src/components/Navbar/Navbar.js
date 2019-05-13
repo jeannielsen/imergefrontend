@@ -5,10 +5,7 @@ import i18n from "../../i18n";
 import "./style.css";
 import BackgroundImage1Icon from './icon-head.png';
 
-
-
 const Navbar = () => {
-
 
     const setLanguage = (langCode) => {
         i18n.changeLanguage(langCode)
@@ -19,7 +16,7 @@ const Navbar = () => {
 
             });
     };
-
+    
     return (
         <header>
             <img  src={BackgroundImage1Icon} className = "icon" alt = "not found"/>
@@ -44,18 +41,20 @@ const Navbar = () => {
                         <li> <Link to="/Translator">Translator </Link></li>
                         </div>
                         
-
-                    {/* <li>
+                    
+                    <li>
                         <button onClick={() => setLanguage("en")}>English</button>
                         <button onClick={() => setLanguage("es")}>Español</button>
                         <button onClick={() => setLanguage("fr")}>Français</button>
-                    </li> */}
+                    </li>
                     </div>
-                        </div>
+                    </div>
+                    
                 </ul>
             </nav>
         </header>
     );
+
 };
 
 export default withTranslation()(Navbar);
