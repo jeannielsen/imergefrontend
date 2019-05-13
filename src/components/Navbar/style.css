@@ -1,11 +1,9 @@
 .imerge{
     font-family: 'Bungee Inline', cursive;
     color:#374785;
-    ;
 }
 nav {
     /* text-align: center; */
-    /* background-color: dodgerblue; */
     background-color:#3B8BEB;
 }
 
@@ -18,8 +16,8 @@ nav {
   }
 nav ul li {
      display: inline-block;
-    padding-left: 25px;
-    padding-right: 25px; 
+    /* padding-left: 25px;
+    padding-right: 25px;  */
     
 }
 #home
@@ -45,17 +43,7 @@ background-color: #F7B733;
 height: 100%;
 }
 
-button {
-    align-items: center;
-    background: white;
-    color: mediumvioletred;
-    border-radius: 20%;
-    justify-content: center;
-  }
 
-/* h2 {
-    /* text-align: center; */
-/* } */ 
 li{
     height: 40px;
 }
@@ -70,13 +58,6 @@ nav li a {
 .links{
     text-align: end;
 }
-/* 
-body{
-    /* background-color: wheat; */
-/* } */ 
-/* li:hover{
-    background-color: white;
-} */
 .icon{
     width:4%;
     

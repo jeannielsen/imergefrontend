@@ -23,7 +23,16 @@
 .card-img-top {
     width: 70%;
     margin: 10%;
- }
+    /* height: 8%; */
+    /* margin-top: 5px; */
+}
+
+.cardbox {
+    height: 1000px;
+}
+.sidePanelMapRow{
+    height: 1000px;
+}
 
 .SidePanelOption{
     height:10px;
@@ -54,3 +63,5 @@
         height: 100%;
    
 }
+
+
