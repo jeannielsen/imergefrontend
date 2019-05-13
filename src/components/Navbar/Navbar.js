@@ -23,8 +23,11 @@ const Navbar = () => {
             <span className="display-4 imerge">&nbsp;&nbsp;Imerge</span>
             <nav className="navigbar">
                 <ul>
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
+                        {/* <div className="col col-sm-1 navList"> */}
+                                {/* <li> <Link to="/">Home</Link></li> */}
+                            {/* </div> */}
                             <div className="col col-sm-2 navList" id="home">
                                 <li> <Link to="/">Home</Link></li>
                             </div>
@@ -40,17 +43,16 @@ const Navbar = () => {
                             <div className="col col-sm-2 navList" id="translator">
                                 <li> <Link to="/Translator">Translator </Link></li>
                             </div>
-                            </div>
-                        
-                        <div className="row">
-                            <div className="col col-sm-12" >
+                            
+                            <div className="col col-sm-2" >
                                 <li id="langBtn">
                                 <button onClick={() => setLanguage("en")}>English</button>
                                 <button onClick={() => setLanguage("es")}>Español</button>
                                 <button onClick={() => setLanguage("fr")}>Français</button>
                                 </li>
                             </div>
-                        </div>
+                            </div>
+                        
                     </div>
                 </ul>
             </nav>

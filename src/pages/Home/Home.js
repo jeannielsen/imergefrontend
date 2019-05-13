@@ -25,7 +25,7 @@ class Home extends React.Component {
 <div className="container-fluid">
   <div className="row carouselRow">
 
-  <div className="col col-sm-8">
+  <div className="col col-8">
 <div id="carouselSlides" className="carousel slide" data-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -50,7 +50,7 @@ class Home extends React.Component {
   </div>
 </div>
 
-  <div className="col col-sm-4 flex-container">
+  <div className="col col-4 flex-container">
   
     <div className = "motto display-1">{this.t('Arrive')}</div>
   <div className = "motto display-1">{this.t('&')}</div>

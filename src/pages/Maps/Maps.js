@@ -3,7 +3,6 @@ import { withTranslation } from 'react-i18next';
 import SidePanel from "../../components/SidePanel";
 import "../../components/InnerMap/style.css";
 import MapsAPI from "../../utils/API";
-// import { google } from "google-maps";
 
 class Maps extends Component {
   constructor({ t, i18n }) {
