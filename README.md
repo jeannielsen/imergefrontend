@@ -26,4 +26,4 @@ Imerge also gives news feeds to headline news regarding immigration issues.  The
 
 ### Website Deployed at:  https://jeannielsen.github.io/imergefrontend/
 
-
+<!-- ![Screenshot_1](/images/Screenshot_1.png) -->
