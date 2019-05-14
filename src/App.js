@@ -11,13 +11,9 @@ import { useTranslation } from 'react-i18next';
 import "./i18n"
 import { basename } from "path";
 
-
 function App() {
-
-
   return (
     // Router component initialized to virtual DOM
-    
     <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar />
@@ -27,7 +23,6 @@ function App() {
           <Route exact path="/Maps" component={Maps} />
           <Route exact path="/News" component={News} />
           <Route exact path="/Translator" component={Translator} />
-
         </Switch>
       </div>
     </Router>

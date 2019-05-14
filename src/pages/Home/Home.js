@@ -10,9 +10,6 @@ import ThumbnailImage3 from './unity-2.png';
 import ThumbnailImage4 from './color-hand.jpg';
 import BackgroundImage4 from './kids-flag.jpg';
 import BackgroundImage5 from './people.jpg';
-import BackgroundImage6 from './group.jpg';
-
-
 
 class Home extends React.Component {
   constructor({ t, i18n }) {
@@ -21,81 +18,72 @@ class Home extends React.Component {
   }
   render () {
     return (
- 
-<div className="container-fluid">
-  <div className="row carouselRow">
-
-  <div className="col col-12 col-md-8 col-sm-12">
-<div id="carouselSlides" className="carousel slide" data-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-        <img src={BackgroundImage1} className="mx-auto d-block w-90 slide"  alt="not found" height="640"/>
-    </div>
-    <div className="carousel-item">
-      <img src={BackgroundImage2} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
-    </div>
-    <div className="carousel-item">
-      <img src={BackgroundImage3} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
-    </div>
-    <div className="carousel-item">
-      <img src={BackgroundImage4} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
-    </div>
-     <div className="carousel-item">
-      <img src={BackgroundImage5} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
-    </div> 
-       </div>
-  </div>
-</div>
-
-  <div className="col col-12 col-md-4 col-sm-12 flex-container">
-  
-    <div className = "motto display-1">{this.t('Arrive')}</div>
-  <div className = "motto display-1">{this.t('&')}</div>
-  <div className = "motto display-1">{this.t('Thrive')}</div>
-  </div>
-
-</div>
-<br/>
-
-<div className="row  ">
- 
-  {/* <div className="col"> */}
-    <div className="card homeServicesSection">
-      <div className="card-header homeServicesHeader">
-       <h3> {this.t('Our Services')}</h3>
-      </div>
-        <div className="card-body">
-        <p className="homeServicesPara">
-        {this.t("We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.")}
-{this.t("We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.")}
-          </p>
-          <div className="row">
-  <div className="col">
-<img src={ThumbnailImage1} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">&emsp;{this.t('Agencies Information')}</figcaption>
-</div>
-<div className="col">
-<img src={ThumbnailImage2} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">&emsp;{this.t('Nearby Facilities Map')}</figcaption>
-</div>
-<div className="col">
-<img src={ThumbnailImage3} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">{this.t('Latest News Section')}</figcaption>
-</div>
-<div className="col">
-<img src={ThumbnailImage4} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
-<figcaption className="thumbnailCaption">{this.t('Translator Section')}</figcaption>
-</div>
-</div>
-
+      <div className="container-fluid">
+        {/* Home Page Carousel */}
+        <div className="row carouselRow">
+          <div className="col col-12 col-md-8 col-sm-12">
+            <div id="carouselSlides" className="carousel slide" data-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img src={BackgroundImage1} className="mx-auto d-block w-90 slide"  alt="not found" height="640"/>
+                </div>
+                <div className="carousel-item">
+                  <img src={BackgroundImage2} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
+                </div>
+                <div className="carousel-item">
+                  <img src={BackgroundImage3} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
+                </div>
+                <div className="carousel-item">
+                  <img src={BackgroundImage4} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
+                </div>
+                <div className="carousel-item">
+                  <img src={BackgroundImage5} className="mx-auto d-block w-90 slide" alt="..." height="640"/>
+                </div> 
+              </div>
+            </div>
+          </div>
+          {/* Motto - Arrive & Thrive */}
+          <div className="col col-12 col-md-4 col-sm-12 flex-container">
+            <div className = "motto display-1">{this.t('Arrive')}</div>
+            <div className = "motto display-1">{this.t('&')}</div>
+            <div className = "motto display-1">{this.t('Thrive')}</div>
+          </div>
         </div>
-      </div>
-  </div>
-  {/* </div> */}
-    
-  
-</div>
+        <br/>
 
+        {/* Home page Our Services Section */}
+        <div className="row">
+          <div className="card homeServicesSection">
+            <div className="card-header homeServicesHeader">
+              <h3> {this.t('Our Services')}</h3>
+            </div>
+            <div className="card-body">
+              <p className="homeServicesPara">
+                {this.t("We believe that diversity makes America stronger and that we should celebrate, not just tolerate the differing cultural expressions and ideals that immigrants bring to this country. Diversity broadens our perspective, bringing new ideas and different experiences which inspires innovation and creativity. A diverse society facilitates acceptance. It teaches us to accept differences in others and look beyond language, race, and religion.")}
+                {this.t("We also strive to help immigrants integrate into American society and deal with the bureaucracy and laws required to become a productive American citizen.")}
+              </p>
+              <div className="row">
+                <div className="col">
+                  <img src={ThumbnailImage1} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
+                  <figcaption className="thumbnailCaption">&emsp;{this.t('Agencies Information')}</figcaption>
+                </div>
+                <div className="col">
+                  <img src={ThumbnailImage2} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
+                  <figcaption className="thumbnailCaption">&emsp;{this.t('Nearby Facilities Map')}</figcaption>
+                </div>
+                <div className="col">
+                  <img src={ThumbnailImage3} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
+                  <figcaption className="thumbnailCaption">{this.t('Latest News Section')}</figcaption>
+                </div>
+                <div className="col">
+                  <img src={ThumbnailImage4} className="rounded-circle" alt="Cinque Terre" width="184" height="156"/>
+                  <figcaption className="thumbnailCaption">{this.t('Translator Section')}</figcaption>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
     )
   }
 }

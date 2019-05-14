@@ -13,7 +13,6 @@ const Navbar = () => {
                 // props.setLangCode(langCode);
             })
             .catch(err => {
-
             });
     };
     // TODO: translate navbar headers
@@ -48,8 +47,7 @@ const Navbar = () => {
                                 <button onClick={() => setLanguage("fr")}>Français</button>
                                 </li>
                             </div>
-                            </div>
-                        
+                            </div>                  
                     </div>
                 </ul>
             </nav>

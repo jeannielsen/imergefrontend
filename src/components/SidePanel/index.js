@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-import { useTranslation } from 'react-i18next';
-import {CategoryOptionsPanel} from '../CategoryOptionsPanel';
+import { CategoryOptionsPanel } from '../CategoryOptionsPanel';
 import "./style.css";
-import {RestaurantOptionsPanel} from '../RestaurantOptionsPanel';
-import {GroceryOptionsPanel} from '../GroceryOptionsPanel';
+import { RestaurantOptionsPanel } from '../RestaurantOptionsPanel';
+import { GroceryOptionsPanel } from '../GroceryOptionsPanel';
 import RestaurantImage from './Restaurant.jpg';
 import GroceryImage from './grocery-icon.png';
 import EmbassyImage from './embassy-icon.png';
@@ -22,7 +21,6 @@ import TempleImage from './temple-2-icon.jpg';
 import ChurchImage from './church-icon.jpg';
 import MosqueImage from './mosque-icon.png';
 
-
 class SidePanel extends Component {
   constructor({ t, i18n }) {
     super({ t, i18n })
@@ -33,20 +31,20 @@ class SidePanel extends Component {
       EmbassyIcon: EmbassyImage,
       GovtOfficeIcon: ImmigrationImage,
       HealthCareIcon: HealthCareImage,
-      PostOfficeIcon:PostOfficeImage,
-      SchoolIcon:SchoolImage,
-      BankIcon:BankImage,
-      BusStopIcon:BusStopImage,
-      AirportIcon:AirportImage,
-      MovieIcon:MovieImage,
-      ParkIcon:ParkImage,
-      TempleIcon:TempleImage,
-      ChurchIcon:ChurchImage,
-      MosqueIcon:MosqueImage,
+      PostOfficeIcon: PostOfficeImage,
+      SchoolIcon: SchoolImage,
+      BankIcon: BankImage,
+      BusStopIcon: BusStopImage,
+      AirportIcon: AirportImage,
+      MovieIcon: MovieImage,
+      ParkIcon: ParkImage,
+      TempleIcon: TempleImage,
+      ChurchIcon: ChurchImage,
+      MosqueIcon: MosqueImage,
       // TODO: i18next text
-      text: (this.t("Select a category you need")),
-      mode:'categoryOptions',
-      selectedRadio:""
+      text: "Select a category you need",
+      mode: 'categoryOptions',
+      selectedRadio: ""
     }
     this.handleRestaurantClick = this.handleRestaurantClick.bind(this);
     this.handleGroceryClick = this.handleGroceryClick.bind(this);
@@ -65,181 +63,205 @@ class SidePanel extends Component {
     this.handlePassedRadioValue = this.handlePassedRadioValue.bind(this);
     this.handleEmbassyClick = this.handleEmbassyClick.bind(this);
     this.handleMilesSearchClick = this.handleMilesSearchClick.bind(this);
-    
   }//End of constructor
 
-  handleMilesSearchClick(event){
-    let milesCalculated = event.target.value*1000;
-     switch(this.state.mode) {
+  handleMilesSearchClick(event) {
+    let milesCalculated = event.target.value * 1000;
+    switch (this.state.mode) {
       case 'restaurant':
-      this.props.onClick("restaurant",milesCalculated,this.state.selectedRadio);
+        this.props.onClick("restaurant", milesCalculated, this.state.selectedRadio);
         break;
-        case 'store':
-      this.props.onClick("store",milesCalculated,this.state.selectedRadio);
+      case 'store':
+        this.props.onClick("store", milesCalculated, this.state.selectedRadio);
         break;
       case 'local_government_office':
-    // let milesCalculated = event.target.value*1000;
-    this.props.onClick("local_government_office",milesCalculated);
+        this.props.onClick("local_government_office", milesCalculated);
         break;
       case 'embassy':
-      this.props.onClick("embassy",milesCalculated);
+        this.props.onClick("embassy", milesCalculated);
         break;
-        case 'hospital':
-      this.props.onClick("hospital",milesCalculated);
+      case 'hospital':
+        this.props.onClick("hospital", milesCalculated);
         break;
-        case 'post_office':
-      this.props.onClick("post_office",milesCalculated);
+      case 'post_office':
+        this.props.onClick("post_office", milesCalculated);
         break;
-        case 'bank':
-      this.props.onClick("bank",milesCalculated);
+      case 'bank':
+        this.props.onClick("bank", milesCalculated);
         break;
-        case 'school':
-      this.props.onClick("school",milesCalculated);
+      case 'school':
+        this.props.onClick("school", milesCalculated);
         break;
-        case 'airport':
-      this.props.onClick("airport",milesCalculated);
+      case 'airport':
+        this.props.onClick("airport", milesCalculated);
         break;
-        case 'bus_station':
-      this.props.onClick("bus_station",milesCalculated);
+      case 'bus_station':
+        this.props.onClick("bus_station", milesCalculated);
         break;
-        case 'movie_theater':
-      this.props.onClick("movie_theater",milesCalculated);
+      case 'movie_theater':
+        this.props.onClick("movie_theater", milesCalculated);
         break;
-        case 'park':
-      this.props.onClick("park",milesCalculated);
+      case 'park':
+        this.props.onClick("park", milesCalculated);
         break;
-        case 'hindu_temple':
-      this.props.onClick("hindu_temple",milesCalculated);
+      case 'hindu_temple':
+        this.props.onClick("hindu_temple", milesCalculated);
         break;
-        case 'church':
-      this.props.onClick("church",milesCalculated);
+      case 'church':
+        this.props.onClick("church", milesCalculated);
         break;
-        case 'mosque':
-      this.props.onClick("mosque",milesCalculated);
+      case 'mosque':
+        this.props.onClick("mosque", milesCalculated);
         break;
 
       default:
-        // code block
+      // code block
     }
 
   }
 
   // Function for handleRestaurantClick
   handleRestaurantClick() {
-    // this.props.onClick("restaurant");
-    this.setState({mode: 'restaurant',
-    // TODO: i18n text
-    text: 'Choose Restaurant Type'});
-    
-   }
+    this.setState({
+      mode: 'restaurant',
+      // TODO: i18n text
+      text: 'Choose Restaurant Type'
+    });
+  }
 
-  handlePassedRadioValue(passedRadioValue){
+  handlePassedRadioValue(passedRadioValue) {
     console.log("inside child handlePassedRadioValue");
-    this.setState({selectedRadio: passedRadioValue});
-    this.props.onClick(this.state.mode,10000,passedRadioValue);
-    
+    this.setState({ selectedRadio: passedRadioValue });
+    this.props.onClick(this.state.mode, 10000, passedRadioValue);
   }
 
   handleGroceryClick() {
-    this.setState({mode: 'store',
-    // TODO: i18next text
-    text: 'Choose Grocery Type'});
-   }
-
-   handleEmbassyClick(){
-    this.setState({mode: 'embassy',
-        // TODO: i18next text
-    text: 'Click on the markers for nearby Embassy details'});
-    this.props.onClick("embassy",10000);
+    this.setState({
+      mode: 'store',
+      // TODO: i18next text
+      text: 'Choose Grocery Type'
+    });
   }
- 
+
+  handleEmbassyClick() {
+    this.setState({
+      mode: 'embassy',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Embassy details'
+    });
+    this.props.onClick("embassy", 10000);
+  }
+
   // Function for handleImmigrationOfficeClick
   handleImmigrationOfficeClick() {
-    this.setState({mode: 'local_government_office',
-        // TODO: i18next text
-    text: 'Click on the markers for nearby Government office details'});
-    this.props.onClick("local_government_office",10000);
-  //  this.addCuisines()
-  }
-
-  handleHealthCareClick(){
-    this.setState({mode: 'hospital',
+    this.setState({
+      mode: 'local_government_office',
       // TODO: i18next text
-    text: 'Click on the markers for nearby HealthCare details'});
-    this.props.onClick("hospital",10000);
+      text: 'Click on the markers for nearby Government office details'
+    });
+    this.props.onClick("local_government_office", 10000);
+    //  this.addCuisines()
   }
 
-  handlePostOfficeClick(){
-    this.setState({mode: 'postOffice',
-        // TODO: i18next text
-    text: 'Click on the markers for nearby postoffice details'});
-    this.props.onClick("post_office",10000);
-  }
-
-  handleSchoolClick(){
-    this.setState({mode: 'school',
-        // TODO: i18next text
-    text: 'Click on the markers for nearby School details'});
-    this.props.onClick("school",10000);
-  }
-
-  handleBankClick(){
-    this.setState({mode: 'bank',
-        // TODO: i18next text
-    text: 'Click on the markers for nearby Bank details'});
-    this.props.onClick("bank",10000);
-  }
-
-  handleBusStopClick(){
-    this.setState({mode: 'bus_station',
-    text: 'Click on the markers for nearby Bus Stop details'});
-    this.props.onClick("bus_station",10000);
-  }
-
-  handleParkClick(){
-    this.setState({mode: 'park',
+  handleHealthCareClick() {
+    this.setState({
+      mode: 'hospital',
       // TODO: i18next text
-    text: 'Click on the markers for nearby Park details'});
-    this.props.onClick("park",10000);
+      text: 'Click on the markers for nearby HealthCare details'
+    });
+    this.props.onClick("hospital", 10000);
   }
 
-  handleAirportClick(){
-    this.setState({mode: 'airport',
+  handlePostOfficeClick() {
+    this.setState({
+      mode: 'postOffice',
       // TODO: i18next text
-    text: 'Click on the markers for nearby Airport details'});
-    this.props.onClick("airport",10000);
+      text: 'Click on the markers for nearby postoffice details'
+    });
+    this.props.onClick("post_office", 10000);
   }
 
-  handleMovieClick(){
-    this.setState({mode: 'movie_theater',
+  handleSchoolClick() {
+    this.setState({
+      mode: 'school',
       // TODO: i18next text
-    text: 'Click on the markers for nearby Movie Theatre details'});
-    this.props.onClick("movie_theater",10000);
+      text: 'Click on the markers for nearby School details'
+    });
+    this.props.onClick("school", 10000);
   }
 
-  handleTempleClick(){
-    this.setState({mode: 'hindu_temple',
+  handleBankClick() {
+    this.setState({
+      mode: 'bank',
       // TODO: i18next text
-    text: 'Click on the markers for nearby Temple details'});
-    this.props.onClick("hindu_temple",10000);
+      text: 'Click on the markers for nearby Bank details'
+    });
+    this.props.onClick("bank", 10000);
   }
 
-  handleChurchClick(){
-    this.setState({mode: 'church',   
-     // TODO: i18next text
-    text: 'Click on the markers for nearby Church details'});
-    this.props.onClick("church",10000);
+  handleBusStopClick() {
+    this.setState({
+      mode: 'bus_station',
+      text: 'Click on the markers for nearby Bus Stop details'
+    });
+    this.props.onClick("bus_station", 10000);
   }
 
-  handleMosqueClick(){
-    this.setState({mode: 'mosque',
-        // TODO: i18next text
-    text: 'Click on the markers for nearby Mosque details'});
-    this.props.onClick("mosque",10000);
+  handleParkClick() {
+    this.setState({
+      mode: 'park',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Park details'
+    });
+    this.props.onClick("park", 10000);
   }
-    
+
+  handleAirportClick() {
+    this.setState({
+      mode: 'airport',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Airport details'
+    });
+    this.props.onClick("airport", 10000);
+  }
+
+  handleMovieClick() {
+    this.setState({
+      mode: 'movie_theater',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Movie Theatre details'
+    });
+    this.props.onClick("movie_theater", 10000);
+  }
+
+  handleTempleClick() {
+    this.setState({
+      mode: 'hindu_temple',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Temple details'
+    });
+    this.props.onClick("hindu_temple", 10000);
+  }
+
+  handleChurchClick() {
+    this.setState({
+      mode: 'church',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Church details'
+    });
+    this.props.onClick("church", 10000);
+  }
+
+  handleMosqueClick() {
+    this.setState({
+      mode: 'mosque',
+      // TODO: i18next text
+      text: 'Click on the markers for nearby Mosque details'
+    });
+    this.props.onClick("mosque", 10000);
+  }
+
   render() {
-    
     const categoryOptions = this.state.mode === 'categoryOptions';
     const RestaurantOptions = this.state.mode === 'restaurant';
     const GroceryOptions = this.state.mode === 'store';
@@ -259,199 +281,182 @@ class SidePanel extends Component {
     const { t } = this.props;
 
     return (
-    <div className="card cardbox" >
-      {/* Main card header */}
-      <div className="card-header sidePanelCardGHeader">
-      {
-          !categoryOptions && (
-            <div className = "GoBack">
-            {/* <a className="back" href ="/Maps">{t("Go back")}</a> */}
-             <Link to ="/Maps">Go back</Link>
-           </div>
-
-          )
-      }
-        {this.state.text}
-        
-        
-      </div>
-       {/* main card body */}   
+      <div className="card cardbox" >
+        {/* Main card header */}
+        <div className="card-header sidePanelCardGHeader">
+          {
+            !categoryOptions && (
+              <div className="GoBack">
+                 <a className="back" href ="/Maps">{t("Go back")}</a> 
+                {/*<li><Link to="/Maps">{t("Go back")}</Link></li>*/}
+              </div>
+            )
+          }
+          {this.state.text}
+        </div>
+        {/* main card body */}
 
         {/* Using short circuit operator to render category options if mode =categoryoptions and hide other JSX elements if mode !=categoryoptions*/}
-     {
+        {
           categoryOptions && (
-      <div className="card-body">
-      {/* First row */}
-        <div className = "row categoryOptionsButton" >
-          {/* subcards */}
-          <div className = "col-sm-4 categoryOptionsCol" >
-          <a href = '#' className= "SidePanelOption" onClick = {this.handleRestaurantClick}>
-            <CategoryOptionsPanel text = {t("Restaurants")} image ={this.state.RestaurnatIcon}/>
-         </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-          <a href = '#' className= "SidePanelOption" onClick = {this.handleGroceryClick}>
-            <CategoryOptionsPanel text = {t("Grocery Stores")} image ={this.state.GroceryIcon}/>
-            </a>
-             </div>
-             <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleMovieClick}>
-          <CategoryOptionsPanel text = {t("Movie Theaters")} image ={this.state.MovieIcon}/>
-          </a>
-          </div>
-           </div>
-      
+            <div className="card-body">
+              {/* First row */}
+              <div className="row categoryOptionsButton" >
+                {/* subcards */}
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleRestaurantClick}>
+                    <CategoryOptionsPanel text={t("Restaurants")} image={this.state.RestaurnatIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleGroceryClick}>
+                    <CategoryOptionsPanel text={t("Grocery Stores")} image={this.state.GroceryIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleMovieClick}>
+                    <CategoryOptionsPanel text={t("Movie Theaters")} image={this.state.MovieIcon} />
+                  </a>
+                </div>
+              </div>
 
-        {/* Second row */}
-        <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-4 categoryOptionsCol">
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleImmigrationOfficeClick}>
-          <CategoryOptionsPanel text = {t("Government Offices")} image ={this.state.GovtOfficeIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleEmbassyClick}>
-          <CategoryOptionsPanel text = {t("Embassy")} image ={this.state.EmbassyIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' onClick = {this.handlePostOfficeClick}>
-          <CategoryOptionsPanel text = {t("Post Offices")} image ={this.state.PostOfficeIcon}/>
-          </a>
-          </div>
-        </div>
+              {/* Second row */}
+              <div className="row categoryOptionsButton" >
+                <div className="col-sm-4 categoryOptionsCol">
+                  <a href='#' className="SidePanelOption" onClick={this.handleImmigrationOfficeClick}>
+                    <CategoryOptionsPanel text={t("Government Offices")} image={this.state.GovtOfficeIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleEmbassyClick}>
+                    <CategoryOptionsPanel text={t("Embassy")} image={this.state.EmbassyIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' onClick={this.handlePostOfficeClick}>
+                    <CategoryOptionsPanel text={t("Post Offices")} image={this.state.PostOfficeIcon} />
+                  </a>
+                </div>
+              </div>
 
-        {/* Third row */}
-      <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption"onClick = {this.handleBusStopClick}>
-          <CategoryOptionsPanel text ={t("Bus Stops")} image ={this.state.BusStopIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleParkClick}>
-          <CategoryOptionsPanel text = {t("Public Parks")} image ={this.state.ParkIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleAirportClick}>
-          <CategoryOptionsPanel text = {t("Airports")} image ={this.state.AirportIcon}/>
-          </a>
-          </div>
-        </div>
-      
-      {/* Fourth row */}
-      <div className = "row categoryOptionsButton" >
-      <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleSchoolClick}>
-          <CategoryOptionsPanel text = {t("Schools")} image ={this.state.SchoolIcon}/>
-          </a>
-          </div>
-        <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleBankClick}>
-          <CategoryOptionsPanel text = {t("Banks")} image ={this.state.BankIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleHealthCareClick}>
-          <CategoryOptionsPanel text = {t("HealthCare")} image ={this.state.HealthCareIcon}/>
-          </a>
-          </div>
-        </div>
-                  
-         {/* Fifth row */}
-        <div className = "row categoryOptionsButton" >
-        <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleTempleClick}>
-          <CategoryOptionsPanel text ={t("Temples")} image ={this.state.TempleIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleChurchClick}>
-          <CategoryOptionsPanel text = {t("Churches")} image ={this.state.ChurchIcon}/>
-          </a>
-          </div>
-          <div className = "col-sm-4 categoryOptionsCol" >
-        <a href = '#' className= "SidePanelOption" onClick = {this.handleMosqueClick}>
-          <CategoryOptionsPanel text = {t("Mosques")} image ={this.state.MosqueIcon}/>
-          </a>
-          </div>
-        </div>
-                
-      </div>
-    
+              {/* Third row */}
+              <div className="row categoryOptionsButton" >
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleBusStopClick}>
+                    <CategoryOptionsPanel text={t("Bus Stops")} image={this.state.BusStopIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleParkClick}>
+                    <CategoryOptionsPanel text={t("Public Parks")} image={this.state.ParkIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleAirportClick}>
+                    <CategoryOptionsPanel text={t("Airports")} image={this.state.AirportIcon} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Fourth row */}
+              <div className="row categoryOptionsButton" >
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleSchoolClick}>
+                    <CategoryOptionsPanel text={t("Schools")} image={this.state.SchoolIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleBankClick}>
+                    <CategoryOptionsPanel text={t("Banks")} image={this.state.BankIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleHealthCareClick}>
+                    <CategoryOptionsPanel text={t("HealthCare")} image={this.state.HealthCareIcon} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Fifth row */}
+              <div className="row categoryOptionsButton" >
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleTempleClick}>
+                    <CategoryOptionsPanel text={t("Temples")} image={this.state.TempleIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleChurchClick}>
+                    <CategoryOptionsPanel text={t("Churches")} image={this.state.ChurchIcon} />
+                  </a>
+                </div>
+                <div className="col-sm-4 categoryOptionsCol" >
+                  <a href='#' className="SidePanelOption" onClick={this.handleMosqueClick}>
+                    <CategoryOptionsPanel text={t("Mosques")} image={this.state.MosqueIcon} />
+                  </a>
+                </div>
+              </div>
+            </div>
           )
-          }
+        }
 
-
-{/* Using short circuit operator to render nearby immigration offices if mode = 'ImmigrationOffices' */}
-     {
-          (RestaurantOptions||GroceryOptions||ImmigrationOfficeDetails||EmbassyDetails||HealthCareDetails||PostOfficeDetails||BankDetails||SchoolDetails||AirportDetails||BusStopDetails||MovieDetails||ParkDetails||TempleDetails||ChurchDetails||MosqueDetails) && (
-      <div className="card-body">
-        <div className = "row" >
-        <form>
-    <div class="form-group">
-    <label for="formControlSelect1">{t('Select miles to be searched')}</label>
-    <select class="form-control" id="formControlSelect1" onChange={this.handleMilesSearchClick}>
-      <option>10</option>
-      <option>20</option>
-      <option>30</option>
-      <option>40</option>
-      <option>50</option>
-      <option>60</option>
-      <option>70</option>
-      <option>80</option>
-      <option>90</option>
-      <option>100</option>
-    </select>
-  </div>
-  </form>
-
-  <div>
-    </div>
-<p>{t('Zoom In/Out the map to see all search results')}</p>
-        </div>
-      </div>
-    
+        {/* Using short circuit operator to render nearby immigration offices if mode = 'ImmigrationOffices' */}
+        {
+          (RestaurantOptions || GroceryOptions || ImmigrationOfficeDetails || EmbassyDetails || HealthCareDetails || PostOfficeDetails || BankDetails || SchoolDetails || AirportDetails || BusStopDetails || MovieDetails || ParkDetails || TempleDetails || ChurchDetails || MosqueDetails) && (
+            <div className="card-body">
+              <div className="row" >
+                <form>
+                  <div class="form-group">
+                    <label for="formControlSelect1">{t('Select miles to be searched')}</label>
+                    <select class="form-control" id="formControlSelect1" onChange={this.handleMilesSearchClick}>
+                      <option>10</option>
+                      <option>20</option>
+                      <option>30</option>
+                      <option>40</option>
+                      <option>50</option>
+                      <option>60</option>
+                      <option>70</option>
+                      <option>80</option>
+                      <option>90</option>
+                      <option>100</option>
+                    </select>
+                  </div>
+                </form>
+                <div>
+                </div>
+                <p>{t('Zoom In/Out the map to see all search results')}</p>
+              </div>
+            </div>
           )
-          }
+        }
 
-               {/* Using short circuit operator to render restaurant radio button options if mode =restaurantoptions */}
-     {
+        {/* Using short circuit operator to render restaurant radio button options if mode =restaurantoptions */}
+        {
           (RestaurantOptions) && (
-      <div className="card-body">
-        <div className = "row" >
-
-        <form>
-          <RestaurantOptionsPanel  onClick = {this.handlePassedRadioValue}/>
-        </form>
- 
-        </div>
-      </div>
-    
+            <div className="card-body">
+              <div className="row" >
+                <form>
+                  <RestaurantOptionsPanel onClick={this.handlePassedRadioValue} />
+                </form>
+              </div>
+            </div>
           )
-          }
+        }
 
- {/* Using short circuit operator to render Grocery store radio button options if mode =restaurantoptions */}
- {
+        {/* Using short circuit operator to render Grocery store radio button options if mode =restaurantoptions */}
+        {
           (GroceryOptions) && (
-      <div className="card-body">
-        <div className = "row" >
-
-        <form>
-          <GroceryOptionsPanel  onClick = {this.handlePassedRadioValue}/>
-        </form>
- 
-        </div>
-      </div>
-    
+            <div className="card-body">
+              <div className="row" >
+                <form>
+                  <GroceryOptionsPanel onClick={this.handlePassedRadioValue} />
+                </form>
+              </div>
+            </div>
           )
-          }
-
-
-    </div>
-  )
-}
+        }
+      </div>
+    )
+  }
 }
 
 export default withTranslation()(SidePanel);
