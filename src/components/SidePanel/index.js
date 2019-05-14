@@ -302,9 +302,7 @@ class SidePanel extends Component {
                 {/*  <a className="back" href ="/Maps">{t("Go back")}</a> */}
                 <button className="back" onClick={this.handleGoBackClick}>{t("Go back")}</button> 
                 {/*<Link to="/Maps" >{t("Go back")}</Link>
-                // <Switch>
-                // <Route exact path="/Maps" component={Maps} />
-                //  </Switch>*/}
+                */}
               </div>
               // </Router>
             )
