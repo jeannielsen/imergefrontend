@@ -28,5 +28,5 @@ Imerge also gives news feeds to headline news regarding immigration issues.  The
 ![Screenshot_3](/src/images/Screenshot_3.png)
 ![Screenshot_4](/src/images/Screenshot_4.png)
 ![Screenshot_5](/src/images/Screenshot_5.png)
-![Screenshot_6](/scr/images/Screenshot_6.png)
+![Screenshot_6](/src/images/Screenshot_6.png)
 
