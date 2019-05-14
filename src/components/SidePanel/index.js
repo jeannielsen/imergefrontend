@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { HashRouter,BrowserRouter as Router,  Route, Link, Switch } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import { CategoryOptionsPanel } from '../CategoryOptionsPanel';
 import "./style.css";
 import { RestaurantOptionsPanel } from '../RestaurantOptionsPanel';
 import { GroceryOptionsPanel } from '../GroceryOptionsPanel';
+import Maps from "../../pages/Maps";
 import RestaurantImage from './Restaurant.jpg';
 import GroceryImage from './grocery-icon.png';
 import EmbassyImage from './embassy-icon.png';
@@ -286,13 +287,20 @@ class SidePanel extends Component {
         <div className="card-header sidePanelCardGHeader">
           {
             !categoryOptions && (
+              // <Router basename={process.env.PUBLIC_URL}>
               <div className="GoBack">
-                 <a className="back" href ="/Maps">{t("Go back")}</a> 
-                {/*<li><Link to="/Maps">{t("Go back")}</Link></li>*/}
+                {/*  <a className="back" href ="/Maps">{t("Go back")}</a> */}
+                <Link to="/Maps" className="back">{t("Go back")}</Link>
+               {/* // <Switch>
+                // <Route exact path="/Maps" component={Maps} />
+                //  </Switch>*/}
               </div>
+              // </Router>
             )
           }
           {this.state.text}
+        
+       
         </div>
         {/* main card body */}
 
