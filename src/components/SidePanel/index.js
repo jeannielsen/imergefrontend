@@ -269,6 +269,7 @@ class SidePanel extends Component {
       // TODO: i18next text
       text: 'Select a category you need'
     });
+    this.props.onClick("GoBack");
   }
 
   render() {
