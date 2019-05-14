@@ -64,6 +64,7 @@ class SidePanel extends Component {
     this.handlePassedRadioValue = this.handlePassedRadioValue.bind(this);
     this.handleEmbassyClick = this.handleEmbassyClick.bind(this);
     this.handleMilesSearchClick = this.handleMilesSearchClick.bind(this);
+    this.handleGoBackClick = this.handleGoBackClick.bind(this);
   }//End of constructor
 
   handleMilesSearchClick(event) {
@@ -262,6 +263,14 @@ class SidePanel extends Component {
     this.props.onClick("mosque", 10000);
   }
 
+  handleGoBackClick(){
+    this.setState({
+      mode: 'categoryOptions',
+      // TODO: i18next text
+      text: 'Select a category you need'
+    });
+  }
+
   render() {
     const categoryOptions = this.state.mode === 'categoryOptions';
     const RestaurantOptions = this.state.mode === 'restaurant';
@@ -290,8 +299,9 @@ class SidePanel extends Component {
               // <Router basename={process.env.PUBLIC_URL}>
               <div className="GoBack">
                 {/*  <a className="back" href ="/Maps">{t("Go back")}</a> */}
-                <Link to="/Maps" className="back">{t("Go back")}</Link>
-               {/* // <Switch>
+                <button className="back" onClick={this.handleGoBackClick}>{t("Go back")}</button> 
+                {/*<Link to="/Maps" >{t("Go back")}</Link>
+                // <Switch>
                 // <Route exact path="/Maps" component={Maps} />
                 //  </Switch>*/}
               </div>
