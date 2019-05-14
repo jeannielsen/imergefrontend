@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0855729fa8a3b6fcfe13da5951a7a3c1",
+    "revision": "f78cb9572b09cd6171132fb6e28050f9",
     "url": "/imergefrontend/index.html"
   },
   {
-    "revision": "1163efb3a1f3594afdcb",
-    "url": "/imergefrontend/static/css/main.db9380ae.chunk.css"
+    "revision": "f50dfb79b45e8aba02ce",
+    "url": "/imergefrontend/static/css/main.83e0d277.chunk.css"
   },
   {
-    "revision": "1694ef07d4e181d5141b",
-    "url": "/imergefrontend/static/js/2.741b3c32.chunk.js"
+    "revision": "1f9726d15d02fae79b93",
+    "url": "/imergefrontend/static/js/2.cb142280.chunk.js"
   },
   {
-    "revision": "1163efb3a1f3594afdcb",
-    "url": "/imergefrontend/static/js/main.32e7cfe1.chunk.js"
+    "revision": "f50dfb79b45e8aba02ce",
+    "url": "/imergefrontend/static/js/main.3b7c5100.chunk.js"
   },
   {
     "revision": "8017c2b5250916e9603a",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "193ff50a1f86e992eb97de99e81d7256",
     "url": "/imergefrontend/static/media/grocery-icon.193ff50a.png"
-  },
-  {
-    "revision": "53d2efc6a2652e2762c7522110b7bcc1",
-    "url": "/imergefrontend/static/media/group.53d2efc6.jpg"
   },
   {
     "revision": "72e3e78e772ee6e61d7ef0d9187312d1",
