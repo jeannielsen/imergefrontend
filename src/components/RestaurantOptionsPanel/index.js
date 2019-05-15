@@ -1,12 +1,13 @@
 import React from "react";
 import MapsAPI from "../../utils/API";
 import Maps from "../../pages/Maps";
-import { Translation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import { RestaurantApiDataStateChange } from '../RestaurantApiDataStateChange';
 
-export class RestaurantOptionsPanel extends React.Component {
+class RestaurantOptionsPanel extends React.Component {
   constructor(props) {
     super(props);
+    this.t=props.t;
     this.state = {
       selectedRadioButton: "",
       restaurantApiData: [],
@@ -36,7 +37,9 @@ export class RestaurantOptionsPanel extends React.Component {
     const radioButtons = cuisines.map(cuisineType => {
       return (
         <div>
-          <input type="radio" id={cuisineType} name={cuisineType} value={cuisineType} checked={this.state.selectedRadioButton === cuisineType} onClick={this.handleRestaurantRadioClick} />{cuisineType}
+          <input type="radio" id={cuisineType} name={cuisineType} value={cuisineType} 
+            checked={this.state.selectedRadioButton === cuisineType} 
+            onClick={this.handleRestaurantRadioClick}/>{this.t(cuisineType)}
         </div>
       )
     });
@@ -48,3 +51,5 @@ export class RestaurantOptionsPanel extends React.Component {
     )
   }
 }
+
+export default withTranslation()(RestaurantOptionsPanel);

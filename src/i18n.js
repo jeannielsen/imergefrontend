@@ -6,6 +6,8 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   es: {
     translation: {
+      "Nearby Services":"Servicios Cercanos",
+      "American":"Americano",
       "Latest News":"Últimas noticias",
       "Select miles to be searched":"Seleccione las millas a buscar",
       "Zoom In/Out the map to see all search results":"Acercar / alejar el mapa para ver todos los resultados de búsqueda",
@@ -71,7 +73,7 @@ const resources = {
       "European": "Europeo",
       "Fast Food": "Comida rápida",
       "Hamburger": "Hamburguesa",
-      "Ice Cream": "Helado",
+      "Ice cream": "Helado",
       "Indian": "Indio",
       "Indonesian": "Indonesio",
       "Irish": "Irlandesa",
@@ -110,6 +112,8 @@ const resources = {
   },
   fr: {
     translation: {
+      "Nearby Services":"Services à Proximité",
+      "American":"Américain",
       "Latest News":"Dernières Nouvelles",
       "Select miles to be searched":"Sélectionnez les miles à rechercher",
       "Zoom In/Out the map to see all search results":"Zoom avant / arrière sur la carte pour voir tous les résultats de la recherche",
@@ -174,7 +178,7 @@ const resources = {
       "European": "Européen",
       "Fast Food": "Vite Aliments",
       "Hamburger": "Hamburger",
-      "Ice Cream": "Crème glacée",
+      "Ice cream": "Crème glacée",
       "Indian": "Indien",
       "Indonesian": "Indonésien",
       "Irish": "Irlandais",

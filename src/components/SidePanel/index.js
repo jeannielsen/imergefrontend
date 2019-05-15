@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import { CategoryOptionsPanel } from '../CategoryOptionsPanel';
 import "./style.css";
-import { RestaurantOptionsPanel } from '../RestaurantOptionsPanel';
+import RestaurantOptionsPanel from '../RestaurantOptionsPanel';
 import { GroceryOptionsPanel } from '../GroceryOptionsPanel';
 import RestaurantImage from './Restaurant.jpg';
 import GroceryImage from './grocery-icon.png';
@@ -41,7 +41,6 @@ class SidePanel extends Component {
       TempleIcon: TempleImage,
       ChurchIcon: ChurchImage,
       MosqueIcon: MosqueImage,
-      // TODO: i18next text
       text: "Select a category you need",
       mode: 'categoryOptions',
       selectedRadio: ""
@@ -262,6 +261,7 @@ class SidePanel extends Component {
   }
 
   render() {
+    // const categoryOptionsFlag: boolean = (this.state.mode === 'categoryOptions');
     const categoryOptions = this.state.mode === 'categoryOptions';
     const RestaurantOptions = this.state.mode === 'restaurant';
     const GroceryOptions = this.state.mode === 'store';
@@ -292,7 +292,7 @@ class SidePanel extends Component {
               </div>
             )
           }
-          {this.state.text}
+          {t(this.state.text)}
         </div>
         {/* main card body */}
 
