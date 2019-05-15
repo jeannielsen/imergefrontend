@@ -88,6 +88,10 @@ class Maps extends Component {
       )
         .catch(err => console.log(err));
     }
+    else if (newCategory === "GoBack") {
+      this.getLocation();
+    }
+
     else {
       // console.log("inside else",newCategory,restaurantType);
       MapsAPI.getApiData(this.state.lat, this.state.long, newCategory, miles).then(res => {

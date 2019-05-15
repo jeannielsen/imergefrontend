@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Link } from 'react-router-dom';
 import Home from "./pages/Home";
 import Agencies from "./pages/Agencies";
 import Maps from "./pages/Maps";
@@ -26,7 +27,7 @@ function App() {
         </Switch>
       </div>
     </Router>
-  );
+    );
 }
 
 export default App;

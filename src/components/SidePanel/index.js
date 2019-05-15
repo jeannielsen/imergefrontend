@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { HashRouter,BrowserRouter as Router,  Route, Link, Switch } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import { CategoryOptionsPanel } from '../CategoryOptionsPanel';
 import "./style.css";
 import RestaurantOptionsPanel from '../RestaurantOptionsPanel';
 import { GroceryOptionsPanel } from '../GroceryOptionsPanel';
+import Maps from "../../pages/Maps";
 import RestaurantImage from './Restaurant.jpg';
 import GroceryImage from './grocery-icon.png';
 import EmbassyImage from './embassy-icon.png';
@@ -62,6 +63,7 @@ class SidePanel extends Component {
     this.handlePassedRadioValue = this.handlePassedRadioValue.bind(this);
     this.handleEmbassyClick = this.handleEmbassyClick.bind(this);
     this.handleMilesSearchClick = this.handleMilesSearchClick.bind(this);
+    this.handleGoBackClick = this.handleGoBackClick.bind(this);
   }//End of constructor
 
   handleMilesSearchClick(event) {
@@ -123,7 +125,6 @@ class SidePanel extends Component {
   handleRestaurantClick() {
     this.setState({
       mode: 'restaurant',
-      // TODO: i18n text
       text: 'Choose Restaurant Type'
     });
   }
@@ -137,7 +138,6 @@ class SidePanel extends Component {
   handleGroceryClick() {
     this.setState({
       mode: 'store',
-      // TODO: i18next text
       text: 'Choose Grocery Type'
     });
   }
@@ -145,7 +145,6 @@ class SidePanel extends Component {
   handleEmbassyClick() {
     this.setState({
       mode: 'embassy',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Embassy details'
     });
     this.props.onClick("embassy", 10000);
@@ -155,7 +154,6 @@ class SidePanel extends Component {
   handleImmigrationOfficeClick() {
     this.setState({
       mode: 'local_government_office',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Government office details'
     });
     this.props.onClick("local_government_office", 10000);
@@ -165,7 +163,6 @@ class SidePanel extends Component {
   handleHealthCareClick() {
     this.setState({
       mode: 'hospital',
-      // TODO: i18next text
       text: 'Click on the markers for nearby HealthCare details'
     });
     this.props.onClick("hospital", 10000);
@@ -174,7 +171,6 @@ class SidePanel extends Component {
   handlePostOfficeClick() {
     this.setState({
       mode: 'postOffice',
-      // TODO: i18next text
       text: 'Click on the markers for nearby postoffice details'
     });
     this.props.onClick("post_office", 10000);
@@ -183,7 +179,6 @@ class SidePanel extends Component {
   handleSchoolClick() {
     this.setState({
       mode: 'school',
-      // TODO: i18next text
       text: 'Click on the markers for nearby School details'
     });
     this.props.onClick("school", 10000);
@@ -192,7 +187,6 @@ class SidePanel extends Component {
   handleBankClick() {
     this.setState({
       mode: 'bank',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Bank details'
     });
     this.props.onClick("bank", 10000);
@@ -209,7 +203,6 @@ class SidePanel extends Component {
   handleParkClick() {
     this.setState({
       mode: 'park',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Park details'
     });
     this.props.onClick("park", 10000);
@@ -218,7 +211,6 @@ class SidePanel extends Component {
   handleAirportClick() {
     this.setState({
       mode: 'airport',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Airport details'
     });
     this.props.onClick("airport", 10000);
@@ -227,7 +219,6 @@ class SidePanel extends Component {
   handleMovieClick() {
     this.setState({
       mode: 'movie_theater',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Movie Theatre details'
     });
     this.props.onClick("movie_theater", 10000);
@@ -236,7 +227,6 @@ class SidePanel extends Component {
   handleTempleClick() {
     this.setState({
       mode: 'hindu_temple',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Temple details'
     });
     this.props.onClick("hindu_temple", 10000);
@@ -245,7 +235,6 @@ class SidePanel extends Component {
   handleChurchClick() {
     this.setState({
       mode: 'church',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Church details'
     });
     this.props.onClick("church", 10000);
@@ -254,10 +243,17 @@ class SidePanel extends Component {
   handleMosqueClick() {
     this.setState({
       mode: 'mosque',
-      // TODO: i18next text
       text: 'Click on the markers for nearby Mosque details'
     });
     this.props.onClick("mosque", 10000);
+  }
+
+  handleGoBackClick(){
+    this.setState({
+      mode: 'categoryOptions',
+      text: 'Select a category you need'
+    });
+    this.props.onClick("GoBack");
   }
 
   render() {
@@ -286,13 +282,18 @@ class SidePanel extends Component {
         <div className="card-header sidePanelCardGHeader">
           {
             !categoryOptions && (
+              // <Router basename={process.env.PUBLIC_URL}>
               <div className="GoBack">
-                 <a className="back" href ="/Maps">{t("Go back")}</a> 
-                {/*<li><Link to="/Maps">{t("Go back")}</Link></li>*/}
+                {/*  <a className="back" href ="/Maps">{t("Go back")}</a> */}
+                <button className="back" onClick={this.handleGoBackClick}>{t("Go back")}</button> 
+                {/*<Link to="/Maps" >{t("Go back")}</Link>
+                */}
               </div>
+              // </Router>
             )
           }
-          {t(this.state.text)}
+          {this.state.text}
+        
         </div>
         {/* main card body */}
 
